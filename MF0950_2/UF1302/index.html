@@ -8,17 +8,124 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Patricio Celi">
     <title>Curso de diseño de páginas Web</title>
-    <style></style>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
     <script></script>
     <link rel="stylesheet" href="css/estilos.css">
     <script src="js/funciones.js" type="text/javascript"></script>
-    <base href="https://www.mipagina.com/img/" target="_blank">
+    <!-- <base href="https://www.mipagina.com/img/" target="_blank"> -->
     <link rel="icon" href="imagen.png" type="image/png">
     <link rel="icon" href="imagen.gif" type="image/gif">
     <link rel="icon" href="imagen.ico" type="image/vnd.microsoft.icon">
 </head>
 <body>
-    <h1>My First Heading</h1>
-    <p>My first paragraph.</p>
+    <h1>Introducción a HTML</h1>
+        <h2>¿Qué es HTML?</h2>
+            <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+            <ul>
+            <!-- Lista desordeanda -->
+                <li>HTML significa Hyper Text Markup Language</li>
+                <li>HTML describe la estructura de las páginas web utilizando el marcado</li>
+                <li>Los elementos HTML son los componentes básicos de las páginas HTML.</li>
+                <li>Los elementos HTML están representados por etiquetas</li>
+                <li>Las etiquetas HTML etiquetan partes de contenido como "encabezado", "párrafo", "tabla", etc.</li>
+                <li>Los navegadores no muestran las etiquetas HTML, pero las utilizan para representar el contenido de la página</li>
+            </ul>
+        <h2>Estructura básica de un documento HTML</h2>
+            <div>
+                <code>
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html lang="es-ES"&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;title&gt;Título de la página&lt;/title&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+
+                    &lt;h1&gt;Encabezado de la página&lt;/h1&gt;<br>
+                    &lt;p&gt;Primer párrafo.&lt;/p&gt;<br>
+
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+                </code>
+            </div>
+            <h3>Explicación de las etiquetas básicas</h3>
+                <div>
+                    <ol>
+                    <!-- Lista ordenada -->
+                        <li>La etiqueta <code>&lt;!DOCTYPE html&gt;</code>  define este documento como HTML5</li>
+                        <li>La etiqueta <code>&lt;html&gt;</code> es el elemento raíz de una página HTML</li>
+                        <li>El atributo <code>lang="es-ES"</code> especifica el idioma del documento</li>
+                        <li>La etiqueta <code>&lt;head&gt;</code> contiene información meta sobre el documento.</li>
+                        <li>La etiqueta <code>&lt;meta charset="UTF-8"&gt;</code> define la codificación de caracteres</li>
+                        <li>La etiqueta <code>&lt;title&gt;</code> especifica un título para el documento.</li>
+                        <li>La etiqueta <code>&lt;body&gt;</code> contiene el contenido de la página visible.</li>
+                        <li>La etiqueta <code>&lt;h1&gt;</code> define un encabezado grande.</li>
+                        <li>La etiqueta <code>&lt;p&gt;</code> define un párrafo.</li>
+                    </ol>
+                </div>
+                <div>
+                <h4>Etiquetas HTML</h4>
+                    <p>Las etiquetas HTML son nombres de elementos rodeados por corchetes angulares:</p>
+                    <div>
+                        <p>El contenido de <code>&lt;tagname&gt; va aquí ... &lt;/tagname&gt;</code></p>
+                    </div>
+                    <dl>
+                    <!-- Lista de definición -->
+                        <dt><b>Las etiquetas HTML</b></dt>
+                        <dd>Normalmente vienen en pares como <code>&lt;p&gt; y &lt;/p&gt;</code></dd>
+                        <dt><b>Las etiquetas HTML</b></dt>
+                        <dd>Están formadas por una etiqueta inicial y una etiqueta final</dd>
+                        <dt><b>La etiqueta final</b></dt>
+                        <dd>Se escribe como la etiqueta inicial, pero con una barra diagonal insertada antes del nombre de la etiqueta</dd>
+                        </dl>
+                    <div>
+                        <p>Sugerencia: la etiqueta inicial también se denomina etiqueta de apertura y la etiqueta final la etiqueta de cierre.</p>
+                    </div>
+                </div>
+                <div>
+                <h5>Navegadores web</h5>
+                    <p>El propósito de un navegador web (Chrome, IE, Firefox, Safari) es leer documentos HTML y mostrarlos.<br>
+                    El navegador no muestra las etiquetas HTML, pero las usa para determinar cómo mostrar el documento:</p>
+                    <img src="img/img_chrome.png" alt="imagen navegador Chrome" width="635" height="361">
+                </div>
+                <div>
+                <h6>Versiones HTML</h6>
+                <p>Desde los primeros días de la web, ha habido muchas versiones de HTML:</p>
+                <table>
+                    <tr>
+                        <th>Versión</th>
+                        <th>Año</th>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>1991</td>
+                    </tr>
+                    <tr>
+                        <td>HTML 2.0</td>
+                        <td>1995</td>
+                    </tr>
+                    <tr>
+                        <td>HTML 3.2</td>
+                        <td>1997</td>
+                    </tr>
+                    <tr>
+                        <td>HTML 4.01</td>
+                        <td>1999</td>
+                    </tr>
+                    <tr>
+                        <td>XHTML</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <td>HTML5</td>
+                        <td>2014</td>
+                    </tr>
+                </table>
+
+                </div>
 </body>
 </html>
