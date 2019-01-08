@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Diseño de páginas Web con HTML, CSS y JavaScript">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="title" content="Confección y publicación de páginas Web">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Patricio Celi">
+    <title>Etiquetas que dan formato al texto</title>
+    <link rel="shortcut icon" href="/MF0950_2/UF1302/img/diamond.ico" type="image/x-icon">
+    <style>
+        /* table, th, td {
+            border: 1px solid black;
+        } */
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 80%;
+            margin: 0 auto;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        div {
+            /* background-color: #f1f1f1; */
+            margin: 10px;
+            padding: 20px;
+        }
+        .nota {
+            background-color: #ffffcc;
+            border-left: 6px solid #ffeb3b;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 5px;
+            /* padding: 10px 5px 10px 15px */
+        }
+        hr {
+            border: 1px solid #eee;
+        }
+        code {
+            color: crimson;
+            background-color: #f1f1f1;
+            padding-left: 4px;
+            padding-right: 4px;
+            font-size: 110%;
+        }
+        .etiquetasHTML {
+            border: 1px solid #cccccc;
+            background-color: #f1f1f1;
+            font-size: 25px;
+            padding: 16px;
+        }
+        code span {
+            color: mediumblue;
+        }
+        code span span {
+            color: brown;
+        }
+        code span span span {
+            color: red;
+        }
+        .code {
+            margin-top: 16px;
+            margin-bottom: 16px;
+            background-color: #ffffff;
+            padding: 8px 12px;
+            border-left: 4px solid #4caf50;
+        }
+        .ejemplo {
+            background-color: #f1f1f1;
+            padding: 8px 16px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16),0 2px 10px 0 rgba(0, 0, 0, 0.12)
+        }
+        table h1,h2,h3,h4,h5,h6 {
+            margin: 0;
+        }
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse:  collapse;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #cccccc;
+        }
+    </style>
+    <script></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/funciones.js" type="text/javascript"></script>
+    <!-- <base href="https://www.mipagina.com/img/" target="_blank"> -->
+    <link rel="icon" href="imagen.png" type="image/png">
+    <link rel="icon" href="imagen.gif" type="image/gif">
+    <link rel="icon" href="imagen.ico" type="image/vnd.microsoft.icon">
+</head>
+<body>
+
+    <h1>Formato HTML</h1>
+    <p>El formato de texto, es el marcado que se aplica a un texto para añadirle datos de forma.</p>
+    <p>Al texto resultante se le conoce como texto formateado, textos con estilos o texto enriquecido</p>
+    <hr>
+
+    <h2>Encabezados de texto</h2>
+    <p>Los motores de búsqueda utilizan los encabezados para indexar la estructura y el contenido de sus páginas web.</p>
+    <p>Los usuarios hojean sus páginas por sus encabezados. Es importante usar encabezados para mostrar la estructura del documento.</p>
+    <p>Los encabezados <code>&lt;h1&gt;</code> se deben usar para los encabezados principales, seguidos de los encabezados<code>&lt;h2&gt;</code>, luego los menos importantes <code>&lt;h3&gt;</code>, y así sucesivamente.</p>
+    <p class="nota"><b>Nota:</b> Use encabezados HTML solo para encabezados. No uses encabezados para hacer el texto <b>GRANDE</b> o en <b>negrita</b>.</p>
+
+    <table>
+        <tr>
+            <th>Etiqueta</th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+            <th>Utilización</th>
+        </tr>
+        <tr>
+            <td>&lt;h1&gt;</td>
+            <td>Describe un encabezado de tipo 1</td>
+            <td><h1>Encabezado tipo 1</h1></td>
+            <td>&lt;h1&gt;Esto es un encabezado de tipo 1&lt;/h1&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;h2&gt;</td>
+            <td>Describe un encabezado de tipo 2</td>
+            <td><h2>Encabezado tipo 2</h2></td>
+            <td>&lt;h1&gt;Esto es un encabezado de tipo 2&lt;/h1&gt;</td> 
+        </tr>
+        <tr>
+            <td>&lt;h3&gt;</td>
+            <td>Describe un encabezado de tipo 3</td>
+            <td><h3>Encabezado tipo 1</h3></td>
+            <td>&lt;h3&gt;Esto es un encabezado de tipo 1&lt;/h3&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;h4&gt;</td>
+            <td>Describe un encabezado de tipo 4</td>
+            <td><h4>Encabezado tipo 1</h4></td>
+            <td>&lt;h4&gt;Esto es un encabezado de tipo 4&lt;/h4&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;h5&gt;</td>
+            <td>Describe un encabezado de tipo 5</td>
+            <td><h5>Encabezado tipo 5</h5></td>
+            <td>&lt;h5&gt;Esto es un encabezado de tipo 5&lt;/h5&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;h6&gt;</td>
+            <td>Describe un encabezado de tipo 6</td>
+            <td><h6>Encabezado tipo 1</h6></td>
+            <td>&lt;h6&gt;Esto es un encabezado de tipo 6&lt;/h6&gt;</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+
+    <h2>Etiquetas que dan formato al texto</h2>
+    <p>HTML también define etiquetas para definir texto con un significado especial.</p>
+    <p>HTML utiliza etiquetas para dar formato de salida, como el texto en negrita o cursiva.</p>
+    <table>
+            <tr>
+                <th>Etiqueta</th>
+                <th>Descripción</th>
+                <th>Ejemplo</th>
+                <th>Utilización</th>
+            </tr>
+            <tr>
+                <td>&lt;b&gt;</td>
+                <td>Define un texto en negrita</td>
+                <td><b>Este texto está en negrita</b></td>
+                <td>&lt;b&gt;Este texto está en negrita&lt;/b&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;i&gt;</td>
+                <td>Define un texto en cursiva</td>
+                <td><i>Este texto está en cursiva</i></td>
+                <td>&lt;i&gt;Este texto está en cursiva&lt;/i&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;strong&gt;</td>
+                <td>Define un texto importante/resaltado</td>
+                <td><strong>Este texto es importante</strong></td>
+                <td>&lt;strong&gt;Este texto es importante&lt;/strong&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;em&gt;</td>
+                <td>Define un texto enfatizado</td>
+                <td><em>Este texto está enfatizado</em></td>
+                <td>&lt;em&gt;Este texto está enfatizado&lt;/em&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;small&gt;</td>
+                <td>Define un texto más pequeño</td>
+                <td>Este texto se muestra <small>más pequeño</small></td>
+                <td>Este texto se muestra &lt;small&gt;más pequeño&lt;/small&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;sub&gt;</td>
+                <td>Define un texto en formato subíndice</td>
+                <td>Este texto <sub>es subíndice</sub> de texto</td>
+                <td>Este texto &lt;sub&gt;es subíndice&lt;/sub&gt; de texto</td>
+            </tr>
+            <tr>
+                <td>&lt;sup&gt;</td>
+                <td>Define un texto en formato superíndice</td>
+                <td>Este texto <sup>es superíndice</sup> de texto</td>
+                <td>Este texto &lt;sup&gt;es superíndice&lt;/sup&gt; de texto</td>
+            </tr>
+            <tr>
+                <td>&lt;ins&gt;</td>
+                <td>Define un texto insertado/agregado</td>
+                <td>Este texto está <ins></ins>agregado</ins></td>
+                <td>Este texto está &lt;ins&gt;agregado&lt;ins&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;s&gt;</td>
+                <td>Define un texto tachado</td>
+                <td>Este texto es un texto <s>tachado</s></td>
+                <td>Este texto es un texto &lt;s&gt;tachado&lt;s&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;u&gt;</td>
+                <td>Define un texto subrayado</td>
+                <td>Este texto está <u>subrayado</u></td>
+                <td>Este texto es un texto &lt;u&gt;subrayado&lt;u&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;del&gt;</td>
+                <td>Define un texto borrado/eliminado</td>
+                <td>Este texto está <del>tachado</del> eliminado</td>
+                <td>Este texto está &lt;del&gt;tachado&lt;/del&gt; eliminado</td>
+            </tr>
+            <tr>
+                <td>&lt;mark&gt;</td>
+                <td>Define un texto marcado/subrayado</td>
+                <td>Este texto está <mark>marcado</mark></td>
+                <td>Este texto está &lt;mark&gt;marcado&lt;/mark&gt;</td>
+            </tr>
+        </table>
+        
+        <p class="nota"><b>Nota:</b> los navegadores se muestran <code>&lt;strong&gt;</code> como <code>&lt;b&gt;</code> y <code>&lt;em&gt;</code> como <code>&lt;i&gt;</code>. Sin embargo, hay una diferencia en el significado de las siguientes etiquetas: <code>&lt;b&gt;</code> y <code>&lt;i&gt;</code>define el texto en negrita y cursiva, pero <code>&lt;strong&gt;</code> y <code>&lt;em&gt;</code> significa que el texto es <strong>"importante"</strong>.</p>
+
+</body>
+</html>
