@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+<title>Etiquetas que an formato al texto</title>
+<meta charset="utf-8">
+<meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="title" content="Confección y publicación de páginas web">
+<meta name="author" content="Francisco">
+
+<link rel="icon" type="image/png" href="img/html5.png">
+<link rel="icon" type="image/gif" href="img/html5.gif">
+<link rel="icon" type="image/vnd.microsoft.icon" href="img/html5.ico">
+
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="img/favicon.ico" type="image/ico">
+ 
+<style>
+	
+body {
+font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+width:90%;
+margin: 0 auto;
+}
+h1,h2,h3,h4,h5,h6 {
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.nota {
+background-color: #ffffcc;
+border-left: 6px solid #ffeb3b;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:20px;
+padding-right:5px;
+	 }
+hr {
+border: 1px solid #eeeeee;
+}
+code {
+color: crimson;
+background-color: #f1f1f1;
+padding-left: 4px;
+padding-right: 4px;
+font-size: 110%;
+}
+.etiquetasHTML {
+border: 1px solid #cccccc;
+background-color: #f1f1f1;
+font-size: 22px;
+padding: 12px;
+}
+code span {
+color: mediumblue;
+}
+code span span {
+color: brown;
+}
+code span span span {
+color: crimson;
+}
+.code {
+margin-top: 16px;
+margin-bottom: 16px;
+background-color: #ffffff;
+padding: 8px 12px;
+border-left: 4px solid #4CAF50;
+color: black;
+}
+.cite {
+margin-top: 16px;
+margin-bottom: 16px;
+background-color: #ffffff;
+padding: 8px 12px;
+border-left: 4px solid #2196F3;
+color: black;
+}
+.ejemplo {
+background-color: #f1f1f1;
+padding: 8px 16px;
+margin: 20px 0;
+box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+table h1,h2,h3,h4,h5,h6 {
+margin:0;
+}
+.tablademo table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+.tablademo td, th {
+border: 1px solid #cccccc;
+text-align: left;
+padding: 8px;
+}
+#tabla1 {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+#tabla1 td, #tabla1 th {
+border: 1px solid #cccccc;
+text-align: left;
+padding: 8px;
+}
+#tabla1 tr:nth-child(even) {
+background-color: #dddddd;
+}
+
+kbd {
+  padding: 0.2rem 0.4rem;
+  font-size: 87.5%;
+  color: #fff;
+  background-color: #212529;
+  border-radius: 0.2rem;
+}
+
+/*kbd kbd {
+  padding: 0;
+  font-size: 100%;
+  font-weight: 700;
+}*/
+samp {
+  font-size: 140%;
+}
+.blockquote {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+span {
+	background-color: #f1f1f1;
+	margin: 2px;
+	padding: 2px 5px;
+	color: #212529;
+	font-size: 87.5%;
+	border-radius: 3px; /*para dar curvatura al borde*/
+	
+}
+#divpadre {
+	overflow: hidden;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+	width: 95%;
+}
+#divhijo1 {
+	float: left;
+	width: 33.33%;
+	/*background-color: lightblue;*/
+}
+#divhijo2 {
+	float: left;
+	width: 33.33%;
+	/*background-color: lightcyan*/
+}
+#divhijo3 {
+	float: left;
+	width: 33.33%;
+	/*background-color: lightgrey;*/
+}
+a:link {
+  color: green; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+
+<script>   </script>
+ 
+ <link href="css/estilos.css" rel="stylesheet" type="text/css">
+ <script src="js/funciones.js" type="text/javascript"></script>
+<!-- <base href="https://www.mipagina.com/img/" target="_blank"> -->
+ 
+</head>
+
+<body>
+
+<br>
+<table>
+	<tbody>
+		<tr>
+			<td width="14%"><a href="../html/index.html"><img src="../html/img/HTML5_Logo_512.png" alt="Logo HTML5" width="128" height="128" title="Inicio de la página"></a></td>
+			<td width="86%">
+				<p>LENGUAJE DE MARCAS</p>
+				<a href="../html/index.html">indice</a> | <a href="../html/introducction.html">introducción</a> | <a href="../html/formato.html">formato</a> | <a href="../html/listas.html">listas</a> | <a href="../html/tablas.html">tablas</a> | <a href="../html/bloques.html">bloques</a> | <a href="../html/multimedia.html">multimedia</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<hr>
+
+<h1 id="tablas">HTML Tablas</h1>
+
+<hr>
+
+<ul>
+	<li><a href="#h2.1">Etiquetas que definen una tabla</a></li>
+	<li><a href="#h2.2">El atributo scope</a></li>
+	<li><a href="#h2.3">El atributo colspan rowspan</a></li>
+	<li><a href="#h2.4">El atributo colgroup y col</a></li>
+	<li><a href="#h2.5">Agrupación por filas</a></li>
+</ul>
+
+<hr>
+<h2 id="h2.1">Etiquetas que definen una tabla</h2>
+
+<p>Una tabla HTML se define con la <code>&lt;table&gt;</code> etiqueta.</p>
+	<p>Cada fila de la tabla se define con la <code>&lt;tr&gt;</code> etiqueta. Un encabezado de tabla se define con la <code>&lt;th&gt;</code> etiqueta. Por defecto, los encabezados de las tablas están en negrita y centrados. Una tabla de datos / celda se define con la <code>&lt;td&gt;</code> etiqueta.</p>
+
+
+<br>
+<table id="tabla1">
+	<tr>
+		<th>Etiqueta</th>
+		<th>Descripción</th>
+	</tr>
+
+	<tr>
+		<td>&lt;table&gt;</td>
+		<td>Define la estructura de una tabla</td>
+	</tr>
+
+	<tr>
+		<td>&lt;tr&gt;</td>
+		<td>Define una fila en una tabla</td>
+	</tr>
+	<tr>
+		<td>&lt;th&gt;</td>
+		<td>Define una celda de cabecera en una tabla</td>
+	</tr>
+
+	<tr>
+		<td>&lt;td&gt;</td>
+		<td>Define una celda dentro de una fila en una tabla</td>
+	</tr>
+	<tr>
+		<td>&lt;caption&gt;</td>
+		<td>Define el títula o leyenda de una tabla</td>
+	</tr>
+
+	<tr>
+		<td>&lt;colgroup&gt;</td>
+		<td>Especifica en una tabla un grupo de una o más columnas para darle formato</td>
+	</tr>
+
+	<tr>
+		<td>&lt;col&gt;</td>
+		<td>Especifica propiedades de columna para cada columna dentro de un elemento &lt;colgroup&gt;</td>
+	</tr>
+	<tr>
+		<td>&lt;thead&gt;</td>
+		<td>Agrupa el contenido del encabezado en una tabla</td>
+	</tr>
+
+	<tr>
+		<td>&lt;tbody&gt;</td>
+		<td>Agrupa el contenido del cuerpo en una tabla</td>
+	</tr>
+
+  <tr>
+	<td>&lt;tfoot&gt;</td>
+	<td>Agrupa el contenido del pie de página en una tabla</td>
+  </tr>
+
+</table>
+<br>
+<div class="nota">
+	<p>La etiqueta <code>&lt;caption&gt;</code> define un título de tabla y debe insertarse inmediatamente después de la etiqueta <code>&lt;table&gt;</code>.</p>
+</div>
+<hr>
+
+<h2 id="h2.2">El atributo Scope</h2>
+<p>El atributo scope provee un mecanismo para indicar explicitamente a qué celdas afecta una celda de encabezado.</p>
+<p>El atributo de ámbito especifica si una celda de encabezado es un encabezado para una columna, fila o grupo de columnas o filas. el atributo de alcance no tiene ningun efecto visual en los navegadores web normales, pero puede ser utilizado por los lectores de pantalla</p>
+
+<table class="tablademo" style="width: 100%; border: 0; text-align: center;">
+	<tr>
+		<td style="width: 25%;">
+			<table>
+			<caption>Encabezado Superior</caption>
+				<tr>
+					<th scope="col" style="width: 33%;">Título</th>
+					<th scope="col" style="width: 33%;">Título</th>
+					<th scope="col" style="width: 33%;">Título</th>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td><p>&nbsp;</p></td>
+					<td><p>&nbsp;</p></td>
+					<td><p>&nbsp;</p></td>
+				</tr>
+			</table>
+		</td>		
+		<td style="width: 25%;">
+			<table>
+			<caption>Encabezado izquierdo</caption>
+				<tr>
+					<th style="width: 33%;">Título</th>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<th style="width: 33%;">Título</th>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<th style="width: 33%;">Título</th>
+					<td><p>&nbsp;</p></td>
+					<td><p>&nbsp;</p></td>
+				</tr>
+			</table>
+		</td>
+		<td style="width: 25%;">
+			<table>
+			<caption>Encabezado izquierda/superior</caption>
+				<tr>
+					<th style="width: 33%;">Título</th>
+					<th style="width: 33%;">Título</th>
+					<th style="width: 33%;">Título</th>
+				</tr>
+				<tr>
+					<th style="width: 33%;">Título</th>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<th style="width: 33%;">Título</th>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+		<td style="width: 25%;">
+			<table>
+			<caption>Sin encabezado</caption>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<br>
+<hr>
+
+<a href="#tablas">Subir a tablas</a>
+
+<h2 id="h2.3">El atributo colspan y rowspan</h2>
+<p>El atributo colspan define el número de columnas que debe abarcar una celda de encabezado. El atributo rowpan define el número de filas que debe abarcar una celda de encabezado.</p>
+
+<table class="tablademo" style="width: 100%; border: 0; text-align: center;">
+	<tr>
+		<td style="width: 25%;">
+			<table>
+			<caption>Encabezado superior</caption>
+				<tr>
+					<th>Título</th>
+					<th>Título</th>
+					<th>Título</th>
+				</tr>
+				<tr>
+					<td colspan="3">&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+		<td style="width: 25%;">
+			<table>
+			<caption>Encabezado izquierdo</caption>
+				<tr>
+					<th style="width: 33%;">Título</th>
+					<td rowspan="3">&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<th style="width: 33%;">Título</th>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<th style="width: 33%;">Título</th>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+		<td style="width: 25%;">
+			<table>
+			<caption>Encabezado superior izquierdo</caption>
+				<tr>
+					<th>Título</th>
+					<th colspan="2">Título</th>
+				</tr>
+				<tr>
+					<th rowspan="2">Título</th>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+		<td style="width: 25%;">
+		  <table>
+			<caption>Sin encabezado</caption>
+				<tr>
+					<td rowspan="3">&nbsp;</td>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<h2 id="h2.4">El atributo colgroup y col</h2>
+<p>La etiqueta <code>&lt;colgroup&gt;</code> especifica un grupo de una o más columnas en una tabla para formatear. La etiqueta <code>&lt;colgroup&gt;</code> es útil para aplicar estilos a columnas completas, en lugar de repetir los estilos para cada celda, para cada fila.</p>
+<p>La etiqueta <code>&lt;col&gt;</code> especifica las propiedades de columna para cada columna dentro de un elemento <code>&lt;colgroup&gt;</code>. La etiqueta <code>&lt;col&gt;</code> es útil para aplicar estilos a columnas enteras, en lugar de repetir los estilos para cada celda, para cada fila.</p>
+
+<table class="tablademo" style="width: 100%; border: 0; text-align: center;">
+	<tr>
+		<td style="width: 33.33%;">
+			<table>
+			<caption>Encabezado Superior</caption>
+			<colgroup>
+				<col span="2" style="background-color: tomato;">
+  				<col style="background-color: yellow;">
+			</colgroup>
+				<tr>
+					<th style="width: 25%;">Título</th>
+					<th style="width: 25%;">Título</th>
+					<th style="width: 25%;">Título</th>
+					<th style="width: 25%;">Título</th>
+				</tr>
+				<tr>
+					<td>Texto</td>
+					<td>Texto</td>
+					<td>Texto</td>
+					<td>Texto</td>
+				</tr>
+				<tr>
+				  <td>Texto</td>
+				  <td>Texto</td>
+					<td>Texto</td>
+				  <td>Texto</td>
+				</tr>
+			</table>
+		</td>
+		<td style="width: 33.33%;">
+			<table>
+			<caption>Encabezado izquierdo</caption>
+			<colgroup>
+				<col span="1" style="background-color: tomato;">
+				<col span="1" style="background-color: lightskyblue;">
+				<col span="1" style="background-color: yellow;">
+			</colgroup>
+			  <tr>
+				<th style="width: 33%;">Título</th>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			  </tr>
+			  <tr>
+				<th style="width: 33%;">Título</th>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			  </tr>
+			  <tr>
+				<th style="width: 33%;">Título</th>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			  </tr>
+			</table>
+		</td>
+		<td>
+			<table>
+				<caption>Sin encabezado</caption>
+				<colgroup>
+					<col span="1" style="background-color: aqua">
+					<col span="1" style="background-color: brown">
+					<col span="1" style="background-color: burlywood">
+					<col span="1" style="background-color: cornsilk">
+				</colgroup>
+				<tr>
+					<td>Texto</td>
+					<td>Texto</td>
+					<td>Texto</td>
+					<td>Texto</td>
+				</tr>
+				<tr>
+					<td>Texto</td>
+					<td>Texto</td>
+					<td>Texto</td>
+					<td>Texto</td>
+				</tr>
+				<tr>
+					<td>Texto</td>
+					<td>Texto</td>
+					<td>Texto</td>
+					<td>Texto</td>
+				</tr>
+			</table>
+		</td>
+  </tr>
+</table>
+<hr>
+
+<h2 id="h2.5">Agrupación por filas</h2>
+<p>HTML provee tres elementos que pueden ayudar a los autores a organizar la informción presentada en una tabla. Éstos son el <code>&lt;thead&gt;</code>, para agrupar las filas que presentan la información de encabezado, <code>&lt;tfoot&gt;</code> para contener a las filas que representan un pie o un resumen, y <code>&lt;tbody&gt;</code> para representar un bloque de filas que consiste en un cuerpo de datos.</p>
+
+<table class="tablademo" style="width: 100%; border: 0; text-align: center;">
+	<tr>
+		<td style="width: 33.33%;">
+			<table>
+			<caption>Encabezado Superior</caption>
+			<colgroup>
+				<col span="2" style="background-color: tomato;">
+  				<col style="background-color: yellow;">
+  				<col>
+			</colgroup>
+			  <thead style="background-color: lightcoral">
+					<tr>
+						<th style="width: 25%;" scope="col">Título</th>
+						<th style="width: 25%;" scope="col">Título</th>
+						<th style="width: 25%;" scope="col">Título</th>
+						<th style="width: 25%;" scope="col">Título</th>
+					</tr>
+				</thead>
+			  <tbody style="background-color: aquamarine">
+					<tr>
+						<td>Texto</td>
+						<td>Texto</td>
+						<td>Texto</td>
+						<td>Texto</td>
+					</tr>			
+					<tr>
+						<td>Texto</td>
+						<td>Texto</td>
+						<td>Texto</td>
+						<td>Texto</td>
+					</tr>
+				</tbody>
+			</table>
+		</td>
+		<td style="width: 33.33%;">
+			<table>
+			<caption>Encabezado izquierdo</caption>
+			<colgroup>
+				<col span="1" style="background-color: tomato;">
+				<col span="1" style="background-color: lightskyblue;">
+				<col span="1" style="background-color: yellow;">
+				<col span="1">
+			</colgroup>
+		  	<thead style="background-color: lightcoral">
+				<tr>
+					<th style="width: 25%;">Título</th>
+					<td>Texto</td>
+					<td>Texto</td>
+					<td>Texto</td>
+				</tr>
+			</thead>
+			<tbody style="background-color: aquamarine">
+				<tr>
+					<th style="width: 25%;">Título</th>
+					<td>Texto</td>
+					<td>Texto</td>
+					<td>Texto</td>
+				</tr>	  
+				<tr>
+					<th style="width: 25%;">Título</th>
+					<td>Texto</td>
+					<td>Texto</td>
+					<td>Texto</td>
+			  	</tr>
+			</tbody>
+			<tfoot style="background-color: chartreuse">
+				<tr>
+					<th style="width: 25%;">Título</th>
+					<td>Texto</td>
+					<td>Texto</td>
+					<td>Texto</td>
+			  	</tr>
+			</tfoot>
+			</table>
+		</td>
+		<td>
+			<table>
+				<caption>Sin encabezado</caption>
+				<colgroup>
+					<col span="1" style="background-color: aqua">
+					<col span="1" style="background-color: brown">
+					<col span="1" style="background-color: burlywood">
+					<col span="1" style="background-color: cornsilk">
+				</colgroup>
+			  <thead style="background-color: #ffffff">
+				<tr>
+					<td>Texto</td>
+					<td>Texto</td>
+					<td>Texto</td>
+					<td>Texto</td>
+				</tr>
+				</thead>
+			  <tbody style="background-color: bisque">
+				<tr>
+					<td>Texto</td>
+					<td>Texto</td>
+					<td>Texto</td>
+					<td>Texto</td>
+				</tr>
+				<tr>
+					<td>Texto</td>
+					<td>Texto</td>
+					<td>Texto</td>
+					<td>Texto</td>
+				</tr>
+				</tbody>
+			  <tfoot style="background-color: #ffffff">
+				<tr>
+					<td>Texto</td>
+					<td>Texto</td>
+					<td>Texto</td>
+					<td>Texto</td>
+				</tr>
+				</tfoot>
+			</table>
+		</td>
+	</tr>
+</table>
+<br>
+
+<div class="nota">
+	<p>Las etiquetas <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code> y <code>&lt;tfoot&gt;</code> se utilizan en conjunción con los tbody y tfoot elementos para especificar cada parte de una tabla (cabecera, cuerpo, pie de página).</p>
+	<p>La etiqueta <code>&lt;thead&gt;</code> debe usarse en el siguiente contexto: como elemento secundario de un elemento <code>&lt;table&gt;</code>, después de cualquier elemento <code>&lt;caption&gt;</code> y <code>&lt;colgroup&gt;</code>, y antes de cualquier <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code> y <code>&lt;tr&gt;</code> elementos.</p>
+<p>Estas etiquetas permiten agrupar filas para darle estilos CSS.</p>
+</div>
+<br>
+
+<table style="width: 100%;">
+	<caption>&lt;caption&gt;Leyenda de tabla&lt;/caption&gt;</caption>
+	<thead style="background-color: bisque">
+	  	<tr>
+			<td rowspan="2">&lt;thead&gt;</td>
+			<td rowspan="2">&lt;tr rowspan="2"&gt;</td>
+			<td colspan="3">&nbsp;</td>
+			<td colspan="2">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</thead>
+	<tbody style="background-color: aquamarine">
+		<tr>
+			<td rowspan="3">&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+	<tfoot style="background-color: lightblue">
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tfoot>
+</table>
+
+
+
+
+
+
+
+
+<p><br>
+<table style="width: 100%">
+<thead>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>   
+    <tfoot>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+ </tfoot>
+</table>
+
+
+
+
+
+
+
+
+<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</p>
+
+
+</body>
+</html>
