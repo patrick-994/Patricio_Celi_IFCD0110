@@ -66,6 +66,14 @@ padding: 8px 12px;
 border-left: 4px solid #4CAF50;
 color: black;
 }
+.cite {
+margin-top: 16px;
+margin-bottom: 16px;
+background-color: #ffffff;
+padding: 8px 12px;
+border-left: 4px solid #2196F3;
+color: black;
+}
 .ejemplo {
 background-color: #f1f1f1;
 padding: 8px 16px;
@@ -75,17 +83,27 @@ box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 table h1,h2,h3,h4,h5,h6 {
 margin:0;
 }
-table {
+.tablademo table {
 font-family: arial, sans-serif;
 border-collapse: collapse;
 width: 100%;
 }
-td, th {
+.tablademo td, th {
 border: 1px solid #cccccc;
 text-align: left;
 padding: 8px;
 }
-tr:nth-child(even) {
+#tabla1 {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+#tabla1 td, #tabla1 th {
+border: 1px solid #cccccc;
+text-align: left;
+padding: 8px;
+}
+#tabla1 tr:nth-child(even) {
 background-color: #dddddd;
 }
 
@@ -97,13 +115,70 @@ kbd {
   border-radius: 0.2rem;
 }
 
-kbd kbd {
+/*kbd kbd {
   padding: 0;
   font-size: 100%;
   font-weight: 700;
-}
+}*/
 samp {
-  font-size: 130%;
+  font-size: 140%;
+}
+.blockquote {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+span {
+	background-color: #f1f1f1;
+	margin: 2px;
+	padding: 2px 5px;
+	color: #212529;
+	font-size: 87.5%;
+	border-radius: 3px; /*para dar curvatura al borde*/
+	
+}
+#divpadre {
+	overflow: hidden;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+	width: 95%;
+}
+#divhijo1 {
+	float: left;
+	width: 33.33%;
+	/*background-color: lightblue;*/
+}
+#divhijo2 {
+	float: left;
+	width: 33.33%;
+	/*background-color: lightcyan*/
+}
+#divhijo3 {
+	float: left;
+	width: 33.33%;
+	/*background-color: lightgrey;*/
+}
+a:link {
+  color: green; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
 }
 </style>
 

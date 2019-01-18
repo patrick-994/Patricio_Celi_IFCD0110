@@ -209,7 +209,16 @@ a:active {
 <h1 id="inicio">HTML Multimedia</h1>
 <hr>
 
-<h2>¿Qué es multimedia?</h2>
+<ul>
+	<li><a href="#h2.1">¿Qué es multimedia?</a></li>
+	<li><a href="#h2.2">Etiquetas de video</a></li>
+	<li><a href="#h2.3">Etiquetas de audioL</a></li>
+	<li><a href="#h2.4">HTML object</a></li>
+	<li><a href="#h2.5">HTML iframe</a></li>
+</ul>
+
+
+<h2 id="h2.1">¿Qué es multimedia?</h2>
 <div style="overflow: hidden">
 	<div style="float: left; width: 65%">
 		<p>La multimedia viene en muchos formatos diferentes. Puede ser casi cualquier cosa que puedas oír o ver.<br> Ejemplos: imágenes, música, sonido, videos, discos, películas, animaciones y más.<br>
@@ -223,7 +232,7 @@ a:active {
 	</div>
 </div>
 
-<h2>Etiquetas de video</h2>
+<h2 id="h2.2">Etiquetas de video</h2>
 <p>Antes de HTML5, un video solo se podía reproducir en un navegador con un complemento (como flash). La etiqueta <code>&lt;video&gt;</code> HTML5 especifica una forma estándar de incrustar un video en una página web.</p>
 
 <table id="tabla1">
@@ -268,7 +277,7 @@ a:active {
 <br>
 <hr>
 
-<h2>Etiquetas de audio</h2>
+<h2 id="h2.3">Etiquetas de audio</h2>
 <p>El atributo <code>controls</code> agrega controles de audio, como reproducir, pausar y volumen.</p>
 <p>La etiqueta <code>&lt;source&gt;</code> le permite especificar archivos de audio alternativos entre los que el navegador puede elegir. El navegador utilizará el primer formato reconocido.</p>
 <p>El texto entre las etiquetas <code>&lt;audio&gt;</code> y <code>&lt;/audio&gt;</code>  sólo se mostrará en los navegadores que no soportan el elemento <code>&lt;audio&gt;</code>.</p>
@@ -298,7 +307,7 @@ a:active {
 
 <a href="#inicio">ir a inicio</a></p>
 <hr>
-<h2 id="listadesordenada">HTML Object</h2>
+<h2 id="h2.4">HTML Object</h2>
 <p>El &lt;object&gt;elemento es soportado por todos los navegadores.</p>
 <p>El &lt;object&gt;elemento define un objeto incrustado dentro de un documento HTML.</p>
 <div style="background-color:#EDEDED;padding:25px">
@@ -323,29 +332,28 @@ a:active {
 <br>
 <a href="#inicio">ir a inicio</a>
 <hr>
-<h2 id="listadesordenada2">HTML iframe</h2>
+<h2 id="h2.5">HTML iframe</h2>
 <p>El &lt;object&gt;elemento es soportado por todos los navegadores.</p>
 <p>El &lt;object&gt;elemento define un objeto incrustado dentro de un documento HTML.</p>
 <div style="background-color:#EDEDED;padding:25px">
 <h3 id="ejemplodeuso4">Ejemplo de uso Object</h3>
-<div class="code">
-  <p><strong>Código <abbr title="HyperText Markup Language">HTML</abbr></strong></p>
-  <div style="border:1px solid black; margin:10px 15px 10px 15px; overflow: hidden">
+	<div class="code">
+	<p><strong>Código <abbr title="HyperText Markup Language">HTML</abbr></strong></p>
+		<div style="border:1px solid black; margin:10px 15px 10px 15px; overflow: hidden">
   
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MEVEUTnFzu8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-   
-   
-    <p> &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/MEVEUTnFzu8&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</p>
-    <p>&nbsp;</p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/MEVEUTnFzu8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+			<p> &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/MEVEUTnFzu8&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</p>
+			<p>&nbsp;</p>
     
-    <a href="https://www.marca.com/" target="mi-iframe">Marca</a>
-    <a href="https://elpais.com/" target="mi-iframe">El Pais</a>
-    <a href="https://as.com/" target="mi-iframe">As</a>
-    <a href="https://www.elmundo.es/" target="mi-iframe">El Mundo</a>
-	  <iframe name="mi-iframe" src="" width="100%" height="500px" frameborder="1"></iframe>
+			<a href="https://www.marca.com/" target="mi-iframe">Marca</a> | 
+			<a href="https://elpais.com/" target="mi-iframe">El Pais</a> | 
+			<a href="https://as.com/" target="mi-iframe">As</a> | 
+			<a href="https://www.elmundo.es/" target="mi-iframe">El Mundo</a> | 
+	  		<iframe name="mi-iframe" src="" width="100%" height="500px" frameborder="1"></iframe>
+		</div>
 	</div>
-	</div>
-
+</div>
 
 
 

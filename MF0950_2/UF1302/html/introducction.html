@@ -66,26 +66,96 @@ padding: 8px 12px;
 border-left: 4px solid #4CAF50;
 color: black;
 }
+.cite {
+margin-top: 16px;
+margin-bottom: 16px;
+background-color: #ffffff;
+padding: 8px 12px;
+border-left: 4px solid #2196F3;
+color: black;
+}
 .ejemplo {
 background-color: #f1f1f1;
 padding: 8px 16px;
 margin: 20px 0;
 box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
-table {
+table h1,h2,h3,h4,h5,h6 {
+margin:0;
+}
+.tablademo table {
 font-family: arial, sans-serif;
 border-collapse: collapse;
 width: 100%;
 }
-
-td, th {
-border: 1px solid #dddddd;
+.tablademo td, th {
+border: 1px solid #cccccc;
 text-align: left;
 padding: 8px;
 }
-
-tr:nth-child(even) {
+#tabla1 {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+#tabla1 td, #tabla1 th {
+border: 1px solid #cccccc;
+text-align: left;
+padding: 8px;
+}
+#tabla1 tr:nth-child(even) {
 background-color: #dddddd;
+}
+
+kbd {
+  padding: 0.2rem 0.4rem;
+  font-size: 87.5%;
+  color: #fff;
+  background-color: #212529;
+  border-radius: 0.2rem;
+}
+
+/*kbd kbd {
+  padding: 0;
+  font-size: 100%;
+  font-weight: 700;
+}*/
+samp {
+  font-size: 140%;
+}
+.blockquote {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+span {
+	background-color: #f1f1f1;
+	margin: 2px;
+	padding: 2px 5px;
+	color: #212529;
+	font-size: 87.5%;
+	border-radius: 3px; /*para dar curvatura al borde*/
+	
+}
+#divpadre {
+	overflow: hidden;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+	width: 95%;
+}
+#divhijo1 {
+	float: left;
+	width: 33.33%;
+	/*background-color: lightblue;*/
+}
+#divhijo2 {
+	float: left;
+	width: 33.33%;
+	/*background-color: lightcyan*/
+}
+#divhijo3 {
+	float: left;
+	width: 33.33%;
+	/*background-color: lightgrey;*/
 }
 a:link {
   color: green; 
@@ -150,16 +220,22 @@ a:active {
 <hr>
 <h2 id="h2.1">¿Qué es HTML?</h2>
 <p>HTML es el lenguaje de marcado estándar para la creación de páginas Web.</p>
-
-<ul>
-<li>HTML significa HyperText Markup Language. (Lenguaje de marcado de hipertexto).</li>
-<li>HTML describe la estructura de las páginas web usando marcado.</li>
-<li>Los elementos HTML son los bloques de construcción de páginas HTML.</li>
-<li>Los elementos HTML están representados por etiquetas que poseen atributos.</li>
-<li>Las etiquetas HTML  marcan el contenido   describiendo la forma de como mostarlo.</li>
-<li>Los navegadores web son los encargados de visualizar las páginas web.</li>
-<li>El navegador no muestra las etiquetas HTML, sólo las lee, las interpreta y las representa.</li>
-</ul>
+<div style="overflow: hidden; width: auto">
+	<div style="float: left; width: 60%;">
+		<ul>
+			<li>HTML significa HyperText Markup Language. (Lenguaje de marcado de hipertexto).</li>
+			<li>HTML describe la estructura de las páginas web usando marcado.</li>
+			<li>Los elementos HTML son los bloques de construcción de páginas HTML.</li>
+			<li>Los elementos HTML están representados por etiquetas que poseen atributos.</li>
+			<li>Las etiquetas HTML  marcan el contenido   describiendo la forma de como mostarlo.</li>
+			<li>Los navegadores web son los encargados de visualizar las páginas web.</li>
+			<li>El navegador no muestra las etiquetas HTML, sólo las lee, las interpreta y las representa.</li>
+		</ul>
+	</div>
+	<div style="float: right; width: 40%;">
+		<img src="../html/img/estructura-basica-de-una-pagina-web-en-html.jpg" alt="estructura basica de html" width="420" height="220">
+	</div>
+</div>
 <hr>
 <div>
 <h2 id="h2.2">Estructura básica de un documento HTML</h2>
