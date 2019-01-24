@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Practicas de etiquetas de estilos de texto">
+<meta name="author" content="Patricio">
+<meta name="Keywords" content="HTML CSS JS">
+<title>Etiquetas de tablas, imagen, división y enlaces</title>
+<style>
+	body {
+		width: 90%;
+		margin: auto;
+		font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+		font-size: 16px;
+		background-color: rgba(156,155,155,0.1);
+	}
+	div {
+		border: 1px solid lightgrey;
+		text-align: center;
+		background-color: white;
+	}
+	.table1 {
+		border: 1px solid lightgrey;
+		width: 98%;
+		margin: 10px auto;
+		border-collapse: collapse;
+		background-color: rgba(131,168,177,0.1);
+	}
+	table,th,td {
+		border: 1px solid lightgrey;
+		margin: auto;
+		border-collapse: collapse;
+	}
+	.div1 {
+		text-align: inherit;
+	}
+	.navegadoresimg {
+		padding: 10px 40px ;
+	}
+	h3 {
+		color: green;
+	}
+	h2 {
+		color: blue;
+	}
+	table {
+		margin-bottom: 10px;
+	}
+	table>thead,tbody,tfoot>th,td {
+		padding: 5px 10px;
+	}
+</style>
+</head>
+
+<body>
+
+<h1>Navegadores web</h1>
+<hr>
+
+<div class="div1">
+	<table class="table1">	
+		<tr>
+			<td class="navegadoresimg" width="25%"><img src="navegadores.png" alt="navegadores.png" width="220" height="150"></td>
+			<td style="padding-left: 15px">
+				<h3>Principales características</h3>
+				<ul>
+					<li><b>Seguridad y provacidad</b>: Ofrecen seguridad contra software malicioso.</li>
+					<li><b>Velocidad</b>: Cargan rápidametne páginas y aplicaciones web.</li>
+					<li><b>Productividad</b>: Contienen marcadores, pestañas e historial.</li>
+					<li><b>Compatibilidad</b>: Están en continuo crecimiento y desarrollo.</li>
+					<li><b>Simplicidad</b>: Están diseñados para ser lo más sencillo posible.</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+</div>
+<hr>
+
+<div>
+	<h2>Navegadores web más usados</h2>
+	<p>Algunos navegadores vienen incorporados a su sistema operativo como es el caso de Internet Explorer o Microsoft Edge en Windows, Safari en MacOS e iOS, Firefox, Opera en Linux y Chrome en Android. Para hacernos una idea con datos y conocer mejor el porcentaje de usuarios de cada navegador, el ranking final de navegadores más empleados en el mundo es el siguiente:</p>
+	<table>
+		<caption><b>Cuota de mercado 2018</b></caption>
+		<colgroup>
+			<col span="3" style="background-color: rgba(82,179,71,0.2)">
+			<col span="3" style="background-color: rgba(229,184,166,0.45)">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col"><img src="chrome.png" alt="Google Chrome" width="30" height="30"><br><b>Chrome</b></th>
+				<th scope="col"><img src="safari.png" alt="Safari" width="30" height="30"><br><b>Safari</b></th>
+				<th scope="col"><img src="firefox.png" alt="Firefox" width="30" height="30"><br><b>Firefox</b></th>
+				<th scope="col"><img src="explorer.png" alt="Internet Explorer" width="30" height="30"><br><b>Explorer</b></th>
+				<th scope="col"><img src="edge.png" alt="Microsoft Edge" width="30" height="30"><br><b>Edge</b></th>
+				<th scope="col"><img src="opera.png" alt="Opera" width="30" height="30"><br><b>Opera</b></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td style="background-color: rgba(93,204,188,0.18)">58,4%</td>
+				<td style="background-color: rgba(93,204,188,0.18)">15,3%</td>
+				<td style="background-color: rgba(93,204,188,0.18)">10,1%</td>
+				<td style="background-color: rgba(213,130,212,0.2)">9,2%</td>
+				<td style="background-color: rgba(213,130,212,0.2)">4,9%</td>
+				<td style="background-color: rgba(213,130,212,0.2)">2,1%</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td><a href="">Descargar</a></td>
+				<td><a href="">Descargar</a></td>
+				<td><a href="">Descargar</a></td>
+				<td><a href="">Descargar</a></td>
+				<td><a href="">Descargar</a></td>
+				<td><a href="">Descargar</a></td>
+			</tr>
+		</tfoot>
+	</table>
+</div>
+<hr>
+
+<div>
+	<h2>Funcionalidad de los navegadores web</h2>
+	<p>Todos los navegadores incluyen la mayoría de las siguientes características: navegación por pestañas, bloqueador de ventanas emergentes, soporte para motores de búsqueda, gestor de descargas, marcadores, corrector ortográfico, y atajos del teclado. Para mantener la privacidad casi todos los navegadores ofrecen maneras sencillas de borrar cookies, cachés web y el historial.</p>
+	<table style="width: 60%">
+		<caption><b>Funcionalidades de los navegadores web</b></caption>
+		<colgroup>
+			<col>
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col"><b>FUNCIONES</b></th>
+				<th scope="col"><img src="chrome.png" alt="Google Chrome" width="30" height="30"><br><b>Chrome</b></th>
+				<th scope="col"><img src="safari.png" alt="Safari" width="30" height="30"><br><b>Safari</b></th>
+				<th scope="col"><img src="firefox.png" alt="Firefox" width="30" height="30"><br><b>Firefox</b></th>
+				<th scope="col"><img src="explorer.png" alt="Internet Explorer" width="30" height="30"><br><b>Explorer</b></th>
+				<th scope="col"><img src="edge.png" alt="Microsoft Edge" width="30" height="30"><br><b>Edge</b></th>
+				<th scope="col"><img src="opera.png" alt="Opera" width="30" height="30"><br><b>Opera</b></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="col"><b>Sincronización en la nube</b></th>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_delete.png" alt="no válido" width="20" height="20">No</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+			</tr>
+			<tr>
+				<th scope="col"><b>Gestor de descargas</b></th>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+			</tr>
+			<tr>
+				<th scope="col"><b>Navegación privada</b></th>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+			</tr>
+			<tr>
+				<th scope="col"><b>Modo de pantalla completa</b></th>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_delete.png" alt="no válido" width="20" height="20">No</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+			</tr>
+			<tr>
+				<th scope="col"><b>Pestañas verticales</b></th>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_delete.png" alt="no válido" width="20" height="20">No</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_delete.png" alt="no válido" width="20" height="20">No</td>
+				<td><img src="icon_delete.png" alt="no válido" width="20" height="20">No</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+			</tr>
+			<tr>
+				<th scope="col"><b>Extensiones personalizadas</b></th>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_delete.png" alt="no válido" width="20" height="20">No</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_delete.png" alt="no válido" width="20" height="20">No</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th scope="col"><b>Valoración</b></th>
+				<td><img src="estrella_32x32.png" alt="estrella" width="20" height="20">6</td>
+				<td><img src="estrella_32x32.png" alt="estrella" width="20" height="20">3</td>
+				<td><img src="estrella_32x32.png" alt="estrella" width="20" height="20">6</td>
+				<td><img src="estrella_32x32.png" alt="estrella" width="20" height="20">4</td>
+				<td><img src="estrella_32x32.png" alt="estrella" width="20" height="20">4</td>
+				<td><img src="estrella_32x32.png" alt="estrella" width="20" height="20">6</td>
+			</tr>
+		</tfoot>
+	</table>
+</div>
+<hr>
+
+<div>
+	<h2>Compatibidad de los navegadores web</h2>
+	<p>La compatibilidad entre navegadores se refiere a que una página web se muestre de forma muy similar en todos los navegadores y en todos los sistemas operativos. Aunque los navegadores cada vez cumplen más los estándares que marca la W3C, entre ellos hay diferencias: reglas que no son soportadas, diferentes interpretaciones de una especificación, lo cual se traduce en que las páginas web no siempre se ven igual entre ellos.</p>
+	<table style="width: 50%">
+		<caption><b>Compatibilidad entre sitemas operativos</b</caption>
+		<colgroup>
+			<col>
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col"><b>COMPATIBILIDAD</b></th>
+				<th scope="col"><img src="chrome.png" alt="Google Chrome" width="30" height="30"><br><b>Chrome</b></th>
+				<th scope="col"><img src="safari.png" alt="Safari" width="30" height="30"><br><b>Safari</b></th>
+				<th scope="col"><img src="firefox.png" alt="Firefox" width="30" height="30"><br><b>Firefox</b></th>
+				<th scope="col"><img src="explorer.png" alt="Internet Explorer" width="30" height="30"><br><b>Explorer</b></th>
+				<th scope="col"><img src="edge.png" alt="Microsoft Edge" width="30" height="30"><br><b>Edge</b></th>
+				<th scope="col"><img src="opera.png" alt="Opera" width="30" height="30"><br><b>Opera</b></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="col"><b>Windows</b></th>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+			</tr>
+			<tr>
+				<th scope="col"><b>macOS</b></th>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_delete.png" alt="no válido" width="20" height="20">No</td>
+				<td><img src="icon_delete.png" alt="no válido" width="20" height="20">No</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+			</tr>
+			<tr>
+				<th scope="col"><b>Linux</b></th>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_delete.png" alt="no válido" width="20" height="20">No</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_delete.png" alt="no válido" width="20" height="20">No</td>
+				<td><img src="icon_delete.png" alt="no válido" width="20" height="20">No</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+			</tr>
+			<tr>
+				<th scope="col"><b>Android</b></th>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_delete.png" alt="no válido" width="20" height="20">No</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_delete.png" alt="no válido" width="20" height="20">No</td>
+				<td><img src="icon_delete.png" alt="no válido" width="20" height="20">No</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+			</tr>
+			<tr>
+				<th scope="col"><b>IOS</b></th>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_delete.png" alt="no válido" width="20" height="20">No</td>
+				<td><img src="icon_delete.png" alt="no válido" width="20" height="20">No</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+			</tr>
+			<tr>
+				<th scope="col"><b>Windows Phone</b></th>
+				<td><img src="icon_delete.png" alt="no válido" width="20" height="20">No</td>
+				<td><img src="icon_delete.png" alt="no válido" width="20" height="20">No</td>
+				<td><img src="icon_delete.png" alt="no válido" width="20" height="20">No</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th scope="col"><b>Valoración</b></th>
+				<td><img src="estrella_32x32.png" alt="estrella" width="20" height="20">5</td>
+				<td><img src="estrella_32x32.png" alt="estrella" width="20" height="20">3</td>
+				<td><img src="estrella_32x32.png" alt="estrella" width="20" height="20">5</td>
+				<td><img src="estrella_32x32.png" alt="estrella" width="20" height="20">2</td>
+				<td><img src="estrella_32x32.png" alt="estrella" width="20" height="20">2</td>
+				<td><img src="estrella_32x32.png" alt="estrella" width="20" height="20">6</td>
+			</tr>
+		</tfoot>
+	</table>
+</div>
+<hr>
+
+<div>
+	<h2>Detalles del software de los navegadores web</h2>
+	<p>Los navegadores de Internet siempre cumplen con el solo objetivo de permitirnos acceder a Internet desde cualquier lugar en que nos encontremos, e independientemente de la plataforma desde la cual los estemos usando. Sin embargo, cada plataforma exige que los navegadores web se comporten o estén desarrollados de una determinada manera.</p>
+	<table style="width: 70%">
+		<colapse><b>Detalles del Navegador</b></colapse>
+		<colgroup>
+			<col>
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col"><b>DETALLES DEL SOFTWARE</b></th>
+				<th scope="col"><img src="chrome.png" alt="Google Chrome" width="30" height="30"><br><b>Chrome</b></th>
+				<th scope="col"><img src="safari.png" alt="Safari" width="30" height="30"><br><b>Safari</b></th>
+				<th scope="col"><img src="firefox.png" alt="Firefox" width="30" height="30"><br><b>Firefox</b></th>
+				<th scope="col"><img src="explorer.png" alt="Internet Explorer" width="30" height="30"><br><b>Explorer</b></th>
+				<th scope="col"><img src="edge.png" alt="Microsoft Edge" width="30" height="30"><br><b>Edge</b></th>
+				<th scope="col"><img src="opera.png" alt="Opera" width="30" height="30"><br><b>Opera</b></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="col"><b>Plataforma</b></th>
+				<td>WebKit</td>
+				<td>WebKit</td>
+				<td>Gecko</td>
+				<td>Trident</td>
+				<td>EdgeHTML</td>
+				<td>WebKit</td>
+			</tr>
+			<tr>
+				<th scope="col"><b>Motor de JavaScript</b></th>
+				<td>V8</td>
+				<td>Nitro</td>
+				<td>TraceMonkey</td>
+				<td>Chakra</td>
+				<td>Chakra</td>
+				<td>Carakan</td>
+			</tr>
+			<tr>
+				<th scope="col"><b>Código abierto</b></th>
+				<td>Sí</td>
+				<td>No</td>
+				<td>Sí</td>
+				<td>No</td>
+				<td>No</td>
+				<td>No</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th scope="col"><b>Página web</b></th>
+				<td>Chrome</td>
+				<td>Safari</td>
+				<td>Firefox</td>
+				<td>Explorer</td>
+				<td>Edge</td>
+				<td>Opera</td>
+			</tr>
+		</tfoot>
+	</table>
+</div>
+<hr>
+
+</body>
+</html>
