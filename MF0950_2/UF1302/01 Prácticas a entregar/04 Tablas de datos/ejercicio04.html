@@ -49,6 +49,24 @@
 	table>thead,tbody,tfoot>th,td {
 		padding: 5px 10px;
 	}
+	.table5>thead>tr>th {
+		background-color:  rgba(240,228,118,0.30);
+	}
+	.table5>tbody>tr>td {
+		background-color: rgba(156,155,155,0.25);
+	}
+	.table5>tbody>tr>th {
+		background-color: rgba(113,138,160,0.47);
+	}
+	.table5>tfoot>tr>td {
+		background-color: rgba(156,155,155,0.25);
+	}
+	.table5>tfoot>tr>th {
+		background-color: rgba(113,138,160,0.47);
+	}
+	a:hover {
+		color: red;
+	}
 </style>
 </head>
 
@@ -107,12 +125,12 @@
 		</tbody>
 		<tfoot>
 			<tr>
-				<td><a href="">Descargar</a></td>
-				<td><a href="">Descargar</a></td>
-				<td><a href="">Descargar</a></td>
-				<td><a href="">Descargar</a></td>
-				<td><a href="">Descargar</a></td>
-				<td><a href="">Descargar</a></td>
+				<td><a href="https://www.google.com.mx/chrome/?brand=CHBD&gclid=EAIaIQobChMIxNHgy82I4AIV8TLTCh1s6Q2NEAAYASAAEgJjlvD_BwE&gclsrc=aw.ds" target="_blank">Descargar</a></td>
+				<td><a href="https://safari.uptodown.com/windows" target="_blank">Descargar</a></td>
+				<td><a href="https://www.mozilla.org/es-ES/firefox/new/" target="_blank">Descargar</a></td>
+				<td><a href="https://support.microsoft.com/es-es/help/4028118/windows-run-the-latest-version-of-internet-explorer-11" target="_blank">Descargar</a></td>
+				<td><a href="https://www.microsoft.com/en-us/download/details.aspx?id=48126" target="_blank">Descargar</a></td>
+				<td><a href="https://www.opera.com/es-419?utm_campaign=%2300%20-%20WW%20-%20Search%20-%20ES%20-%20Branded&gclid=EAIaIQobChMI-5yd6c6I4AIVTCrTCh2TygNnEAAYASAAEgKpsPD_BwE" target="_blank">Descargar</a></td>
 			</tr>
 		</tfoot>
 	</table>
@@ -125,11 +143,12 @@
 	<table style="width: 60%">
 		<caption><b>Funcionalidades de los navegadores web</b></caption>
 		<colgroup>
-			<col>
+			<col span="1" style="background-color: rgba(213,130,212,0.19);">
+			<col span="6" style="background-color: rgba(156,155,155,0.25)">
 		</colgroup>
-		<thead>
+		<thead style="background-color: rgba(240,228,118,0.30)">
 			<tr>
-				<th scope="col"><b>FUNCIONES</b></th>
+				<th scope="col" style="background-color: rgba(156,155,155,0.3)"><b>FUNCIONES</b></th>
 				<th scope="col"><img src="chrome.png" alt="Google Chrome" width="30" height="30"><br><b>Chrome</b></th>
 				<th scope="col"><img src="safari.png" alt="Safari" width="30" height="30"><br><b>Safari</b></th>
 				<th scope="col"><img src="firefox.png" alt="Firefox" width="30" height="30"><br><b>Firefox</b></th>
@@ -194,7 +213,7 @@
 				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
 			</tr>
 		</tbody>
-		<tfoot>
+		<tfoot style="background-color: rgba(156,155,155,0.1)">
 			<tr>
 				<th scope="col"><b>Valoración</b></th>
 				<td><img src="estrella_32x32.png" alt="estrella" width="20" height="20">6</td>
@@ -215,11 +234,12 @@
 	<table style="width: 50%">
 		<caption><b>Compatibilidad entre sitemas operativos</b</caption>
 		<colgroup>
-			<col>
+			<col span="1" style="background-color: rgba(82,179,71,0.2)">
+			<col span="6" style="background-color: rgba(156,155,155,0.25)">
 		</colgroup>
-		<thead>
+		<thead style="background-color: rgba(240,228,118,0.30)">
 			<tr>
-				<th scope="col"><b>COMPATIBILIDAD</b></th>
+				<th scope="col" style="background-color: rgba(156,155,155,0.3)"><b>COMPATIBILIDAD</b></th>
 				<th scope="col"><img src="chrome.png" alt="Google Chrome" width="30" height="30"><br><b>Chrome</b></th>
 				<th scope="col"><img src="safari.png" alt="Safari" width="30" height="30"><br><b>Safari</b></th>
 				<th scope="col"><img src="firefox.png" alt="Firefox" width="30" height="30"><br><b>Firefox</b></th>
@@ -284,7 +304,7 @@
 				<td><img src="icon_check.png" alt="válido" width="20" height="20">Sí</td>
 			</tr>
 		</tbody>
-		<tfoot>
+		<tfoot style="background-color: rgba(156,155,155,0.1)">
 			<tr>
 				<th scope="col"><b>Valoración</b></th>
 				<td><img src="estrella_32x32.png" alt="estrella" width="20" height="20">5</td>
@@ -302,14 +322,11 @@
 <div>
 	<h2>Detalles del software de los navegadores web</h2>
 	<p>Los navegadores de Internet siempre cumplen con el solo objetivo de permitirnos acceder a Internet desde cualquier lugar en que nos encontremos, e independientemente de la plataforma desde la cual los estemos usando. Sin embargo, cada plataforma exige que los navegadores web se comporten o estén desarrollados de una determinada manera.</p>
-	<table style="width: 70%">
+	<table class="table5" style="width: 70%">
 		<colapse><b>Detalles del Navegador</b></colapse>
-		<colgroup>
-			<col>
-		</colgroup>
 		<thead>
 			<tr>
-				<th scope="col"><b>DETALLES DEL SOFTWARE</b></th>
+				<th scope="col" style="background-color: rgba(156,155,155,0.25)"><b>DETALLES DEL SOFTWARE</b></th>
 				<th scope="col"><img src="chrome.png" alt="Google Chrome" width="30" height="30"><br><b>Chrome</b></th>
 				<th scope="col"><img src="safari.png" alt="Safari" width="30" height="30"><br><b>Safari</b></th>
 				<th scope="col"><img src="firefox.png" alt="Firefox" width="30" height="30"><br><b>Firefox</b></th>
@@ -350,12 +367,12 @@
 		<tfoot>
 			<tr>
 				<th scope="col"><b>Página web</b></th>
-				<td>Chrome</td>
-				<td>Safari</td>
-				<td>Firefox</td>
-				<td>Explorer</td>
-				<td>Edge</td>
-				<td>Opera</td>
+				<td><a href="">Chrome</a></td>
+				<td><a href="">Safari</a></td>
+				<td><a href="">Firefox</a></td>
+				<td><a href="">Explorer</a></td>
+				<td><a href="">Edge</a></td>
+				<td><a href="">Opera</a></td>
 			</tr>
 		</tfoot>
 	</table>
