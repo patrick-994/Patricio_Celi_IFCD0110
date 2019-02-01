@@ -1,0 +1,205 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	box-sizing: border-box;
+}
+body {
+	background-image: url(../textura.jpg);
+	font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+	font-size: 20px;
+}
+.espiral {
+	background-image: url(../libreta-espiral.gif);
+	background-repeat: repeat-y;
+	background-size: contain;
+	margin: 2% 3%;
+	display: block;
+	padding: 30px 90px 20px 90px;
+	box-shadow: 15px 15px 15px rgba(0,0,0,0.45);
+}
+hr {
+	width: 30%;
+	border-color: lightgray;
+	margin: 30px auto;
+}
+h1 {
+	display: block;
+	text-align: center;
+	background-color: rgba(247,243,143,0.5);
+	padding: 8px 0;
+	border-bottom: 20px groove red;
+}
+.navegador {
+	background-color: papayawhip;
+	border: 1px solid lightgrey;
+	padding: 1%;
+}
+.lista {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+	width: 100%;
+	background-color: darkred;
+}
+.lista li {
+	float: left;
+	list-style: none;
+	width: 33.33%;
+	border: 1px solid yellow;
+	padding: 1% 0;
+}
+.lista a {
+	text-decoration: none;
+	color: white;
+}
+.fondoAmarillo {
+	border: 1px solid black;
+	width: 90%;
+	margin: auto;
+	margin-top: 30px;
+	background-color: rgba(247,243,143,0.5);
+	box-shadow: 12px 12px 8px rgba(0,0,0,0.45);
+}
+.fondoAmarillo img {
+	position: absolute;
+	right: 190px;
+	width: 90px;
+	height: 90px;
+}
+h2 {
+	width: 95%;
+	margin: auto;
+	border-bottom: 10px groove red;
+	padding-top: 50px;
+	text-transform: uppercase;
+}
+.p1 {
+	width: 95%;
+	margin: 40px auto 30px;
+	text-align: justify;
+}
+.p2 {
+	width: 95%;
+	margin: 0 auto 20px;
+	padding: 12px 12px 12px 15px;
+	text-align: justify;
+}
+.parrafoRojo {
+	background-color: papayawhip;
+	border-left: 5px solid darkred;
+}
+.botonRojo {
+	width: 95%;
+	margin: auto;
+	margin-bottom: 65px;
+	margin-top: 35px;
+}
+.botonRojo a {
+	background-color: darkred;
+	padding: 15px;
+	text-decoration: none;
+	color: white;
+}
+.blue {
+	color: darkblue;
+}
+.red {
+	color: darkred;
+}
+.green {
+	color: darkgreen;
+}
+.blue2 {
+	color: deepskyblue;
+}
+.descargar {
+	border: 1px dashed darkred;
+	width: 90%;
+	margin: 30px auto 15px;
+	background-color: rgba(247,243,143,0.5);
+	text-align: center;
+}
+.descargar p {
+	margin: 10px;
+}
+.descargar a {
+	text-decoration: none;
+}
+.letraGrandre {
+	font-size: 21px;
+}
+.letraMediana {
+	font-size: 18px;
+}
+.letraPequeña {
+	font-size: 16px;
+}
+.fondoVerde {
+	border: 1px solid black;
+	width: 90%;
+	margin: auto;
+	margin-top: 30px;
+	background-color: rgba(129,224,137,0.5);
+	box-shadow: 12px 12px 8px rgba(0,0,0,0.45);
+}
+.fondoVerde img {
+	position: absolute;
+	right: 190px;
+	width: 90px;
+	height: 90px;
+}
+.parrafoAzul {
+	background-color: rgba(78,125,219,0.5);
+	border-left: 5px solid darkblue;
+}
+.botonAzul {
+	width: 95%;
+	margin: auto;
+	margin-bottom: 65px;
+	margin-top: 35px;
+}
+.botonAzul a {
+	background-color: darkblue;
+	padding: 15px;
+	text-decoration: none;
+	color: white;
+}
+.fondoMorado {
+	border: 1px solid black;
+	width: 90%;
+	margin: auto;
+	margin-top: 30px;
+	background-color: rgba(125,108,213,0.45);
+	box-shadow: 12px 12px 8px rgba(0,0,0,0.45);
+}
+.fondoMorado img {
+	position: absolute;
+	right: 190px;
+	width: 90px;
+	height: 90px;
+}
+.parrafoVerde {
+	background-color: rgba(140,390,110,0.50);
+	border-left: 5px solid darkgreen;
+}
+.parrafoVerde li {
+	margin-left: 30px;
+
+}
+.botonVerde {
+	width: 95%;
+	margin: auto;
+	margin-bottom: 65px;
+	margin-top: 35px;
+}
+.botonVerde a {
+	background-color: darkgreen;
+	padding: 15px;
+	text-decoration: none;
+	color: white;
+}
+
+
+
+

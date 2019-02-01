@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+	font-size: 120%;
+}
+div {
+	width: 74%;
+	margin: 5% auto;
+	border: 1px solid black;
+	background-color: rgba(244,233,158,0.7);
+	box-shadow: 8px 8px 8px rgba(0,0,0,0.45)
+}
+hr {
+	width: 10%;
+	align: center;
+	border: 1px solid black;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	
+}
+h1, h2, h3 {
+	text-align: center;
+}
+mark {
+	color: darkmagenta;
+	border: 1px solid rgba(134,35,7,1.00);
+	padding: 10px 8px;
+	text-shadow: 1px 1px 4px rgba(0,0,0,0.75);
+	
+}
+h1 {
+	background-color: rgba(134,35,7,1.00);
+	margin-left: 16px;
+	margin-right: 16px;
+}
+h2 {
+	border-top: 4px dotted rgba(134,35,7,1.00);
+	border-bottom: 4px dotted rgba(134,35,7,1.00);
+	margin-right: 30px;
+	margin-left: 30px;
+}
+h3 {
+	border-top: 4px dashed rgba(134,35,7,1.00);
+	border-bottom: 4px dashed rgba(134,35,7,1.00);
+	margin-left: 90px;
+	margin-right: 90px;
+}
+.p1 {
+	margin-right: 30px;
+	margin-left: 30px;
+	border: 2px solid rgba(134,35,7,1.00);
+	border-radius: 0.7em;
+	padding: 15px;
+	background-color: papayawhip;
+	box-shadow: 5px 5px 10px -3px rgba(0,0,0,0.75);
+}
+.p2 {
+	margin-right: 40px;
+	margin-left: 40px;
+	border: 2px solid rgba(134,35,7,1.00);
+	border-radius: 0.7em;
+	padding: 15px;
+	background-color: papayawhip;
+	box-shadow: 5px 5px 10px -3px rgba(0,0,0,0.75);
+	text-indent: 40px;
+}
+.p3 {
+	margin-right: 30px;
+	margin-left: 30px;
+	border: 2px solid rgba(134,35,7,1.00);
+	border-radius: 0.7em;
+	padding: 15px;
+	background-color: papayawhip;
+	box-shadow: 5px 5px 10px -3px rgba(0,0,0,0.75);
+	text-align: center;
+}
+q {
+	quotes: "«" "»";
+}
+abbr {
+	text-decoration-line: none;
+	border: 1px solid green;
+	padding: 0 4px;
+	color: darkred;
+}
+i, em, strong {
+	color: darkred;
+}
+i b {
+	color: darkblue;
+}
+cite {
+	color: darkblue;
+	font-weight: bold;
+}
+sup {
+	color: darkred;
+}
+ins, s, del {
+	text-decoration-color: darkred;
+}
+u {
+	text-decoration-color: darkblue;
+}

@@ -6,6 +6,60 @@
 <meta name="author" content="Patricio">
 <meta name="Keywords" content="HTML CSS JS">
 <title>Etiqueta de imagen, secciones y semánticas</title>
+<style>
+	body {
+		margin: 15px 8px;;
+		background-color: rgba(174,174,174,0.4);
+		font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif"
+	}
+	header {
+		background-color: rgba(43,108,185,0.9);
+		color: white;
+		text-align: center;
+		padding-bottom: 5px;
+		padding-top: 5px;
+		display: block;
+	}
+	nav {
+		display: block;
+		width: 100%;
+		background-color: rgba(232,232,232,0.6);
+		margin: 0;
+		color: white;
+		padding: 0;
+		text-align: center;
+		overflow: hidden;
+	}
+	nav span {
+		background-color: rgba(43,108,185,0.9);
+		padding: 2px 10px;
+	}
+	span {
+		background-color: rgba(43,108,185,0.9);
+		padding: 2px 10px;
+	}
+	nav span a {
+		color: white;
+		text-decoration: none;
+		padding: 15px 10px;
+		margin-top: 20px;
+	}
+	section nav a {
+		text-decoration: none;
+		color: rgba(24,96,195,1.00);
+	}
+	li {
+		list-style-image: url(lista-icono.png);
+		text-align: left;
+		
+		
+	}
+	section {
+		margin:0;
+		padding: 0;
+		display: block;
+	}
+</style>
 </head>
 <body>
 <main>
@@ -17,34 +71,36 @@
 	</header>
 	
 	<nav>
-		<span><a href="#">Internacional</a></span> <span><a href="#">Opinión</a></span> <span><a href="#">Sociedad</a></span> <span><a href="#">Economía</a></span> <span><a href="#">Ciencia</a></span> <span><a href="#">Tecnología</a></span> <span><a href="#">Cultura</a></span> <span><a href="#">Gente</a></span> <span><a href="#">Deportes</a></span> <span><a href="#">Televisión</a></span> <span><a href="#">Video</a></span>
+		<span><a href="#">Internacional</a></span> <span><a href="">Opinión</a></span> <span><a href="">Sociedad</a></span> <span><a href="">Economía</a></span> <span><a href="">Ciencia</a></span> <span><a href="">Tecnología</a></span> <span><a href="">Cultura</a></span> <span><a href="">Gente</a></span> <span><a href="">Deportes</a></span> <span><a href="">Televisión</a></span> <span><a href="">Video</a></span>
 	</nav>
 	
-	<section>
-		<h3>Tecnolgía</h3>
-		<div>
-			<article>
-				<img src="galaxy-note_9.jpg" alt="Note 9">
+	<section style="display: block; margin: 0; padding: 0; background-color: white;">
+		<h3 style="text-align: center; color: white; background-color: darkorange; padding: 8px 0;">Tecnolgía</h3>
+		<div style="overflow: hidden; width: 95%;padding: 1%; margin: auto;">
+			<article style="float: left; width: 30%;">
+				<img src="galaxy-note_9.jpg" alt="Note 9" style="width: 100%;">
 				<h2>Análisis | Un mes con el Samsung Galaxy Note 9</h2>
 				<p>LAURA PÉREZ<img src="estrella_32x32.png" alt="estrela" width="16" height="16"><img src="estrella_32x32.png" alt="estrela" width="16" height="16"><img src="estrella_32x32.png" alt="estrela" width="16" height="16"><img src="estrella_32x32.png" alt="estrela" width="16" height="16"><img src="estrella_32x32.png" alt="estrela" width="16" height="16"></p>
 				<p>Probamos el último modelo de la firma coreana, un terminal de gama alta que brilla por su pantalla, su característico lápiz digital S Pen y su funcionamiento con el uso de Inteligencia Artificial.</p>
 			</article>
-			<article>
-				<img src="honor-view20.jpg" alt="Honor">
+			<article style=" float: right; width: 30%;">
+				<img src="honor-view20.jpg" alt="Honor"  style="width: 100%;">
 				<h2>Honor View20, un móvil con más píxeles que ninguno</h2>
 				<p>ANA GÓMEZ<img src="estrella_32x32.png" alt="estrela" width="16" height="16"><img src="estrella_32x32.png" alt="estrela" width="16" height="16"><img src="estrella_32x32.png" alt="estrela" width="16" height="16"><img src="estrella_32x32.png" alt="estrela" width="16" height="16"></p>
 				<p>La segunda marca de Huawei lanza un teléfono inteligente con la cámara frontal oculta y la trasera de 48 megapíxeles. Se maneja por inteligencia artificial y por un superprocesador, el más potente.</p>
 			</article>
-			<article>
-				<img src="pocophone-f1.jpg" alt="pocophone">
+			<article style="width: 30%; margin: auto;">
+				<img src="pocophone-f1.jpg" alt="pocophone" style="width: 100%;">
 				<h2>Pocophone F1, ¿el mejor móvil en relación calidad-precio?</h2>
 				<p>ANTONIO SÁNCHEZ<img src="estrella_32x32.png" alt="estrela" width="16" height="16"><img src="estrella_32x32.png" alt="estrela" width="16" height="16"><img src="estrella_32x32.png" alt="estrela" width="16" height="16"></p>
 				<p>La segunda marca de la china Xiaomi se lanza al mercado con un terminal caracterizado por especificaciones de gama alta y un precio de gama media que logra eliminando lo superfluo.</p>
 			</article>
 
 		</div>
-		<div>
-			<aside>
+	</section>
+	<section>
+		<div style="overflow: hidden;">
+			<nav style="float: left; width: 20%; padding: 1%;">
 				<img src="logo-vodafone.png" alt="vodafone" align="left"><br>
 				<ul>
 					<li><a href="">Más populares</a></li>
@@ -57,48 +113,14 @@
 					<li><a href="">Tablets</a></li>
 					<li><a href="">Smartphones</a></li>
 				</ul>
-			</aside>
-			<article>
+			</nav>
+			<article style="width: 36%; float:left; padding: 1.5%;">
 				<iframe width="392" height="220" src="https://www.youtube.com/embed/6_YopNlxcYU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				<h2>Una retina de grafeno para devolver la vista a 230 millones de personas</h2>	
 			</article>
-			<article>
+			<article style="width: 36%; float: left; padding: 1.5%;">
 				<iframe width="392" height="220" src="https://www.youtube.com/embed/IP3rOxqQQAw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				<h2>El superordenador que fabrica humanos virtuales para probar medicinas</h2>
-			</article>
-		</div>
-	</section>
-	<section>
-		<h3>Videojuegos</h3>
-		<div>
-			<article>
-				<img src="../05 Etiquetas Semánticas/fornite.jpg" alt="fornite">
-				<h2>Cómo completar los desfíos de Fornite de la Semana 8 de la Temporada 7</h2>
-				<p>JOSÉ ORTÍZ<img src="../05 Etiquetas Semánticas/estrella_32x32.png" alt="estrella" width="16" height="16"><img src="../05 Etiquetas Semánticas/estrella_32x32.png" alt="estrella" width="16" height="16"><img src="../05 Etiquetas Semánticas/estrella_32x32.png" alt="estrella" width="16" height="16"><img src="../05 Etiquetas Semánticas/estrella_32x32.png" alt="estrella" width="16" height="16"><img src="../05 Etiquetas Semánticas/estrella_32x32.png" alt="estrella" width="16" height="16"></p>
-				<p>Ya están disponibles los desafíos correspondientes a la Semana 8 de la Temporada 7 del Pase de Batalla de Fortnite Battle Royale. Completadlos con nuestra guía.</p>
-			</article>
-			<article>
-				<img src="../05 Etiquetas Semánticas/gta5.jpg" alt="trucos gta">
-				<h2>Todos los trucos y claves de GTA 5 en PS3, PS4, PC, Xbox One y 360s</h2>
-				<p>PEDRO ZAMBRANO<img src="../05 Etiquetas Semánticas/estrella_32x32.png" alt="estrela" width="16" height="16"><img src="../05 Etiquetas Semánticas/estrella_32x32.png" alt="estrela" width="16" height="16"><img src="../05 Etiquetas Semánticas/estrella_32x32.png" alt="estrela" width="16" height="16"><img src="../05 Etiquetas Semánticas/estrella_32x32.png" alt="estrela" width="16" height="16"><img src="../05 Etiquetas Semánticas/estrella_32x32.png" alt="estrela" width="16" height="16"></p>
-			</article>
-			<article>
-				<h3>Contenido relacionado</h3>
-				<div>
-					<img src="../05 Etiquetas Semánticas/red_dead_redemption3.jpg" alt="read dead">
-					<h2>Red Dead Redemption 2, número 1 en USA.</h2>
-				</div>
-				<hr>
-				<div>
-					<img src="../05 Etiquetas Semánticas/red_dead_redemption2.jpg" alt="read dead trucos">
-					<h2>Todos los trucos de Red Dead Redemption 2.</h2>
-				</div>
-				<hr>
-				<div>
-					<img src="../05 Etiquetas Semánticas/assassins-creed-odyssey.jpg" alt="assassin's creed">
-					<h2>Assassin's Creed Odyssey, Guía completa.</h2>
-				</div>
-				<div></div>
 			</article>
 		</div>
 	</section>

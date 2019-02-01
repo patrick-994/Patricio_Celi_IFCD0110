@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family: 'Swanky and Moo Moo', cursive;
+	font-size: 25px;
+}
+h2 {
+	border-bottom: 3px solid darkred;
+}
+h3 {
+	border-left: 6px double darkgreen;
+}
+span {
+	font-weight: bold;
+}
+.dotted {
+	border-style: dotted;
+}
+.dashed {
+	border-style: dashed;
+}
+.solid {
+	border-style: solid;
+}
+.double {
+	border-style: double;
+}
+.groove {
+	border-style: groove;
+}
+.ridge {
+	border-style: ridge;
+}
+.inset {
+	border-style: inset;
+}
+.outset {
+	border-style: outset;
+}
+.none {
+	border-style: none;
+}
+.hidden {
+	border-style: hidden;
+}
+.mix {
+	border-style: dashed groove solid dotted;
+}
+.border1 {
+	border-style: dashed dotted double ridge;
+	border-width: 3px 5px 7px 9px;
+	border-color: brown chocolate coral bisque;
+}
+.border2 {
+	border-style: groove solid inset outset;
+	border-width: 4px 6px 8px 10px;
+	border-color: aqua cadetblue darkblue darkcyan;
+}
+.color {
+	border-style: solid;
+	border-left-color: red;
+	border-top-color: #158f55;
+	border-right-color: rgba(220,40,91,0.91);
+	border-bottom-color: transparent;
+}
+.estilo1 {
+	border-top-style: dotted;
+	border-left-style: dotted;
+	border-bottom-style: double;
+	border-right-style: solid;
+}
