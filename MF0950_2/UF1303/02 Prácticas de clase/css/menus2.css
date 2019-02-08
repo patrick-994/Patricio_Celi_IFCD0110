@@ -1,0 +1,473 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	box-sizing: border-box;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:1em;
+}
+/* -------------Menú Estilo 1-------------- */
+#menu1 {
+	width: 80%;
+	margin: auto;
+	border: 1px solid black;
+	padding: 10px;
+	position: sticky;
+	top: 0;
+}
+#menu1 ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: antiquewhite;
+	text-align: center;
+}
+#menu1 ul li {
+	display: inline-block;
+	border: 1px solid gray;
+}
+#menu1 ul li a {
+	display: inline-block;
+	text-decoration: none;
+	color: red;
+	padding: 10px;
+	width: 100px;
+}
+#menu1 ul li a:hover {
+	color: green;
+	background-color: ghostwhite;
+	text-decoration: underline;
+}
+/* -------------Menú Estilo 2-------------- */
+#menu2 {
+	width: 80%;
+	margin: 0 auto;
+	height: auto;
+	border: 1px solid black;
+	overflow: hidden;
+}
+#menu2 ul {
+	list-style-type: none;
+	text-align: center;
+	float: left;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	left: 50%;
+}
+#menu2 ul li {
+	float: left;
+	border: 1px solid blue;
+	background-color: darkred;
+	margin: 10px 2px;
+	position: relative;
+	right: 50%;
+}
+#menu2 ul li a {
+	text-decoration: none;
+	/*----text-align: center;----*/
+	color: white;
+	padding: 10px;
+	display: block;
+	width: 100px;
+}
+#menu2 ul li a:hover {
+	background-color: darkblue;
+	color: yellow;
+	text-decoration: underline;
+}
+/* -------------Menú Estilo 3-------------- */
+#menu3 {
+	width: 80%;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid black;
+}
+#menu3 ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+#menu3 ul li {
+	display: inline;
+}
+#menu3 ul li a {
+	text-decoration: none;
+	display: inline;
+	padding: 10px 15px;
+}
+.rojo {
+	background-color: darkred;
+	color: white;
+}
+.rojo:hover {
+	opacity: 0.8;
+}
+.verde {
+	background-color: darkgreen;
+	color: white;
+}
+.verde:hover {
+	opacity: 0.8;
+}
+.violeta {
+	background-color: darkviolet;
+	color: white;
+}
+.violeta:hover {
+	opacity: 0.8;
+}
+.azul {
+	background-color: darkblue;
+	color: white;
+}
+.azul:hover {
+	opacity: 0.8;
+}
+.naranja {
+	background-color: darkgoldenrod;
+	color: white;
+}
+.naranja:hover {
+	opacity: 0.8;
+}
+/* -------------div: padre/hijo1/hijo2/hijo3/iconos-------------- */
+#padre {
+	width: 80%;
+	margin: auto;
+	padding: 10px;
+	border: 1px solid black;
+	overflow: hidden;
+}
+#hijo1 {
+	width: 33.33%;
+	float: left;
+}
+#hijo2 {
+	width: 33.33%;
+	float: right;
+}
+#hijo3 {
+	width: 33.33%;
+	margin: auto;
+}
+.iconosizq {
+	width: 25px;
+	height: 25px;
+	margin-right: 5px;
+	vertical-align: -0.4em;
+}
+.iconosdrch {
+	width: 25px;
+	height: 25px;
+	margin-left: 5px;
+	vertical-align: -0.4em;
+}
+/* -------------Menú Estilo 4-------------- */
+#menu4 {
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid black;
+}
+#menu4 ul {
+	list-style-type: none;
+	border: 1px solid red;
+	margin: 0 auto;
+	padding: 0;
+	width: auto;
+}
+#menu4 ul li {
+	text-align: left;
+	margin: auto;
+	width: auto;
+	border: 1px solid blue;
+}
+#menu4 ul li a {
+	text-decoration: none;
+	background-color: darkgoldenrod;
+	display: block;
+	padding: 10px 15px;
+	color: white;
+}
+#menu4 ul li a:hover {
+	background-color: #2f8731;
+}
+/* -------------Menú Estilo 5-------------- */
+#menu5 {
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid black;
+}
+#menu5 ul {
+	list-style-type: none;
+	border: 1px solid red;
+	margin: 0 auto;
+	padding: 0;
+	width: auto;
+}
+#menu5 ul li {
+	text-align: right;
+	margin: auto;
+	width: auto;
+	border: 1px solid blue;
+}
+#menu5 ul li a {
+	text-decoration: none;
+	background-color: darkgoldenrod;
+	display: block;
+	color: white;
+	padding: 10px 15px;
+}
+#menu5 ul li a:hover {
+	background-color: #2f8731;
+}
+/* -------------Menú Estilo 6-------------- */
+#menu6 {
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid black;
+}
+#menu6 ul {
+	list-style-type: none;
+	border: 1px solid red;
+	margin: 0 auto;
+	padding: 0;
+	width: auto;
+}
+#menu6 ul li {
+	text-align: center;
+	border: 1px solid blue;
+	margin: auto;
+	width: auto;
+}
+#menu6 ul li a {
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	background-color: #2f8731;
+	color: white;
+}
+#menu6 ul li a:hover {
+	background-color: darkgoldenrod;
+}
+/* -------------Menú Estilo 7-------------- */
+#menu7 {
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid black;
+}
+#menu7 ul {
+	list-style-type: none;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+#menu7 ul li {
+	display: inline-block;
+	background-color: #cccccc;
+}
+#menu7 ul li a {
+	display: block;
+	padding: 10px;
+}
+#menu7 ul li a:hover {
+	background-color: #999999;
+}
+/* -------------Menú Estilo 8-------------- */
+#menu8 {
+	width: 80%;
+	margin: 20px auto;
+	padding: 10px;
+	border: 1px solid black;
+}
+#menu8 ul {
+	list-style-type: none;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	position: fixed;
+	right: 0;
+	top: 10%;
+}
+#menu8 ul li {
+	display: block;
+	background-color: darkred;
+	margin: 2px 0;
+	border-radius: 0.9em;
+}
+#menu8 ul li a {
+	display: block;
+	padding: 5px;
+}
+#menu8 ul li a:hover {
+	border-radius: 0.9em;
+	background-color: #999999;
+}
+/* -------------Menú Estilo 9-------------- */
+#menu9 {
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid black;
+}
+#menu9 ul {
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #333333;
+}
+#menu9 ul li {
+	float: left;
+	border-right: 1px solid #bbb;
+}
+#menu9 ul li a {
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	padding: 14px 16px;
+}
+#menu9 ul li a:hover {
+	background-color: red;
+}
+#menu9 ul li:hover ul {
+	display: block;
+}
+#menu9 ul li ul {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	z-index: 1;
+}
+#menu9 ul li ul li {
+	float: none;
+}
+#menu9 ul li ul a {
+	color: black;
+	text-align: left;
+}
+#menu9 ul li ul a:hover {
+	background-color: dodgerblue;
+	color: white;
+}
+/* -------------Menú Estilo 10-------------- */
+#menu10 {
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid black;
+}
+#menu10 ul {
+	list-style-type: none;
+	padding: 0;
+	margin:0;
+}
+#menu10 ul li {
+	display: block;
+	position: relative;
+	width: 250px;
+	border: 1px solid #f9f9f9;
+	background-color: #333333;
+}
+#menu10 ul li a {
+	color: white;
+	text-decoration: none;
+	padding: 14px 16px;
+	display:block;
+	text-align: center;
+}
+#menu10 ul li a:hover {
+	background-color: red;
+	color:white;
+}
+#menu10 ul li ul {
+	display: none;
+	position: absolute;
+	top:0;
+	left:250px;
+}
+#menu10 ul li:hover > ul {
+	display: block;
+}
+#menu10 ul li ul a {
+	color: white;
+	text-align: left;
+	background-color: #777777;
+}
+#menu10 ul li ul a:hover {
+	background-color: dodgerblue;
+	color: white;
+}
+#menu10 ul li ul li ul li a {
+	color: white;
+	text-align: left;
+}
+#menu10 ul li ul li ul li a:hover {
+	background-color: green;
+	color: white;
+}
+/* -------------Menú Estilo 11-------------- */
+#menu11 {
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid black;
+}
+#menu11 ul {
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #333333;
+}
+#menu11 ul li {
+	float: left;
+	border-right: 1px solid #bbb;
+}
+#menu11 ul li a {
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	padding: 14px 16px;
+}
+#menu11 ul li a:hover {
+	background-color: red;
+}
+#menu11 ul li:hover ul {
+	display: block;
+}
+#menu11 ul li ul {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	z-index: 1;
+}
+#menu11 ul li ul li {
+	float: none;
+}
+#menu11 ul li ul a {
+	color: black;
+	text-align: left;
+}
+#menu11 ul li ul a:hover {
+	background-color: dodgerblue;
+	color: white;
+}
+#menu11 ul li ul li ul {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	z-index: 1;
+}
+/* -------------Menú Estilo 12-------------- */
