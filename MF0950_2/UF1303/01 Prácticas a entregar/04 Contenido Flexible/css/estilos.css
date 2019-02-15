@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+}
+body {
+	width: 90%;
+	margin: 20px auto;
+}
+/*-------------------------------------------------------------*/
+.flex-containernav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+	background-color: blue;
+}
+.flex-containernav > div {
+	margin: 0 10px;
+	padding: 0;
+}
+.flex-containernav2 {
+	display: flex;
+	flex-direction: column;
+	
+}
+.flex-containernav2 > div {
+	margin: 0px;
+	padding: 8px;
+}
+.flex-containernav3 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	background-color: darkblue;
+	border-radius: 0.3em;
+	margin-left: 90px;
+	margin-top: -8px;
+	padding-top: 10px;
+}
+.flex-containernav3 > div {
+	margin: -7px 0 2px;
+	padding: 10px 5px;
+	font-size: 0.85em;
+}
+.flex-containernav3 > div > a {
+	text-decoration: none;
+	color: mediumpurple;
+	font-weight: bold;
+}
+.flex-containernav4 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+.flex-containernav4 > div {
+	margin: 2px;
+	font-size: 1.2em;
+}
+.flex-containernav4 > div > a {
+	text-decoration: none;
+	color: skyblue;
+	font-weight: bold;
+}
+/*-------------------------------------------------------------*/
+.flex-containerheader {
+	display: flex;
+	flex-flow: row wrap;
+	align-content: flex-end;
+	justify-content: flex-end;
+	background-image: url(../img/foto-playa.jpg);
+	background-size: 100% 100%;
+	height: 500px;
+	padding: 10px;
+	border-bottom: 4px solid rgba(227,191,42,1.00);
+}
+.flex-containerheader > div {
+	background-color: rgba(0,0,0,0.4);
+	width: 280px;
+	height: 310px;
+	margin-right: 60px;
+	margin-bottom: 30px;color: white;
+	padding: 0 20px 20px;
+	border-radius: 0.3em;
+	border-top: 4px solid rgba(227,191,42,1.00);
+}
+.letragrande {
+	font-size: 1.8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

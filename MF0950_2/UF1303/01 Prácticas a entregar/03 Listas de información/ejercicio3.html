@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <title>Etiquetas de listas, divisiones, enlaces e imágenes</title>
-<link rel="stylesheet" href="/01 Prácticas a entregar/03 Listas de información/css/estilos.css" type="text/css">
+<link rel="stylesheet" href="../03 Listas de información/css/estilos.css" type="text/css">
 </head>
 <body>
 <header>
 	<div>
-		<img src="../03 Listas de información/img/HTML5_png.png" alt="html icono">
+		<img src="../03 Listas de información/img/HTML5_png.png" alt="html icono" class="htmlicon">
 	</div>
 	<div>
 		<h1>La Web Semántica</h1>
@@ -16,7 +16,7 @@
 	</div>
 </header>
 <nav>
-	<p>&lt;nav&gt;Barra de navegación&lt;/nav&gt;</p>
+	<p class="letraazul">&lt;nav&gt;Barra de navegación&lt;/nav&gt;</p>
 	<ul>
 		<li><a href="#">Encabezado</a></li>
 		<li><a href="#">Navegación</a></li>
@@ -32,79 +32,109 @@
 	<p>&lt;main&gt;contenido principal&lt;/main&gt;</p>
 	<section>
 		<h2>&lt;section&gt;Sección de la página web&lt;/section&gt;</h2>
-		<article>
+		<article id="article1">
 			<h3>&lt;article&gt;Artículo web&lt;/article&gt;</h3>
 			<img src="../03 Listas de información/img/01-albarracin.jpg" alt="Albarracín">
+			<p class="fotopaisaje"><i>FOTO PAISAJE</i></p>
+			<h3 class="letraazul">Título del artículo</h3>
 			<p>Albarracín es un pueblo turolense con mucho encanto. Considerado un monumento en sí mismo, el trazado de sus calles son sinuosos pasadizos, sus caserios de tono rejizo y su muralla...</p>
 			<p><a href="#">leer más</a></p>
 			<p><b>Pedro</b> | Comentarios 2 | 09/05/2018</p>
 			<hr>
 		</article>
-		<article>
+		<article id="article2">
 			<h3>&lt;article&gt;Artículo web&lt;/article&gt;</h3>
 			<img src="../03 Listas de información/img/02-huesca.jpg" alt="">
+			<p class="fotopaisaje"><i>FOTO PAISAJE</i></p>
+			<h3 class="letraazul">Título del artículo</h3>
 			<p>Alquézar se encuentra en un entorno natural privilegiado, en el corazón del Parque Natural de la Sierra y Cañones de Guara. Sus calles estrechas y empedradas invitan a pasear por ellas y descu...</p>
 			<p><a href="#">leer más</a></p>
 			<p><b>JUAN</b> | Comentarios 2 | 09/05/2018</p>
 			<hr>
 		</article>
-		<aside>
-			<h3>&lt;aside&gt;Contenido relacionado&lt;/aside&gt;</h3>
-			<div>
-				<ul>
-					<li>
-						<img src="../03 Listas de información/img/img_5terre.jpg" alt="pueblo en acantilado">
-						<p>Los 10 pueblos costeros más bonitos de España</p>
-					</li>
-					<li>
-						<img src="../03 Listas de información/img/img_lights.jpg" alt="aurora boreal">
-						<p>Las 10 imágenes más increibles de la aurora boreal</p>
-					</li>
-					<li>
-						<img src="../03 Listas de información/img/img_mountains.jpg" alt="lago">
-						<p>Los 10 grandes lagos ubicados entre montañas</p>
-					</li>
-				</ul>
-			</div>
-			<div>
-				<ul>
-					<li>
-						<img src="../03 Listas de información/img/01.png" alt="desierto">
-						<p>Los lugares más áridos</p>
-					</li>
-					<li>
-						<img src="../03 Listas de información/img/02.jpg" alt="rio">
-						<p>Los ríos más grandes</p>
-					</li>
-					<li>
-						<img src="../03 Listas de información/img/03.jpg" alt="carretera">
-						<p>Las carreteras más rectas</p>
-					</li>
-					<li>
-						<img src="../03 Listas de información/img/04.jpg" alt="">
-						<p>Las casas más remotas</p>
-					</li>
-				</ul>
-			</div>
-		</aside>
 	</section>
+	<aside>
+		<h3 class="letraazul">&lt;aside&gt;Contenido relacionado&lt;/aside&gt;</h3>
+		<div id="menu1">
+			<ul>
+				<li>
+					<img src="../03 Listas de información/img/img_5terre.jpg" alt="pueblo en acantilado">
+					<h4>Los 10 pueblos costeros más bonitos de España</h4>
+				</li>
+				<li>
+					<img src="../03 Listas de información/img/img_lights.jpg" alt="aurora boreal">
+					<h4>Las 10 imágenes más increibles de la aurora boreal</h4>
+				</li>
+				<li>
+					<img src="../03 Listas de información/img/img_mountains.jpg" alt="lago">
+					<h4>Los 10 grandes lagos ubicados entre montañas</h4>
+				</li>
+			</ul>
+		</div>
+		<div id="menu2">
+			<ul>
+				<li>
+					<img src="../03 Listas de información/img/01.png" alt="desierto">
+					<h4>Los lugares más áridos</h4>
+				</li>
+				<li>
+					<img src="../03 Listas de información/img/02.jpg" alt="rio">
+					<h4>Los ríos más grandes</h4>
+				</li>
+				<li>
+					<img src="../03 Listas de información/img/03.jpg" alt="carretera">
+					<h4>Las carreteras más rectas</h4>
+				</li>
+				<li>
+					<img src="../03 Listas de información/img/04.jpg" alt="">
+					<h4>Las casas más remotas</h4>
+				</li>
+			</ul>
+		</div>
+	</aside>
 </main>
 <footer>
 	<p>&lt;footer&gt;Sección del pie de página del documento&lt;/footer&gt;</p>
 	<div>
-		<div>
+		<div id="menu3">
+			<p>Síguenos en...</p>
 			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li><a href="#"><img src="../03 Listas de información/img/iconos/facebook.png" alt="Facebook">Facebook</a></li>
+				<li><a href="#"><img src="../03 Listas de información/img/iconos/twitter.png" alt="Twitter">Twitter</a></li>
+				<li><a href="#"><img src="../03 Listas de información/img/iconos/googleplus.png" alt="Google+">Google+</a></li>
+				<li><a href="#"><img src="../03 Listas de información/img/iconos/linkdin.png" alt="Linkdin">Linkdin</a></li>
+				<li><a href="#"><img src="../03 Listas de información/img/iconos/youtube.png" alt="YouTube">YouTube</a></li>
 			</ul>
 		</div>
-		<div>
+		<div id="menu4">
+			<p>Contacto</p>
 			<ul>
-				
+				<li><a href="#"><img src="../03 Listas de información/img/iconos/home.png" alt="Nombre del centro">CFTIC. Centro de Formación</a></li>
+				<li><a href="#"><img src="../03 Listas de información/img/iconos/placeholder.png" alt="ubicación">Av. de las Arcas del Agua, 2</a></li>
+				<li><a href="#"><img src="../03 Listas de información/img/iconos/email.png" alt="coódigo postal">28905, Madrid</a></li>
+				<li><a href="#"><img src="../03 Listas de información/img/iconos/auricular-phone.png" alt="teléfono de contacto">916 83 81 60</a></li>
+				<li><a href="#"><img src="../03 Listas de información/img/iconos/emailcircular.png" alt="correo">correo@gmail.com</a></li>
+			</ul>
+		</div>
+		<div id="menu5">
+			<p>Documentación</p>
+			<ul>
+				<li><a href="#"><img src="../03 Listas de información/img/iconos/aviso-legal.png" alt="Aviso Legal">Aviso Legal</a></li>
+				<li><a href="#"><img src="../03 Listas de información/img/iconos/privacidad.png" alt="Política de Privacidad">Política de Privacidad</a></li>
+				<li><a href="#"><img src="../03 Listas de información/img/iconos/politicadeuso.png" alt="Condiciones de Uso">Condiciones de Uso</a></li>
+				<li><a href="#"><img src="../03 Listas de información/img/iconos/cookies.png" alt="">Plítica de Cookies</a></li>
+				<li><a href="#"><img src="../03 Listas de información/img/iconos/contacto.png" alt="Accesibilad Web">Accesibilidad Web</a></li>
 			</ul>
 		</div>
 	</div>
 </footer>
 </body>
 </html>
+
+
+
+
+
+
+
+

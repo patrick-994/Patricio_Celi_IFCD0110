@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* CSS Document */
+ CSS Document 
 
 * {
 	box-sizing: border-box;
@@ -175,7 +175,6 @@
 	width:33.33%;
 	background-color: lightgray;
 	height: 200px;
-	margin:1px;
 }
 
 .iconos {
@@ -416,17 +415,18 @@
 }
 #menu9 ul {
 	list-style-type: none;
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
-	overflow: hidden;
+/*	overflow: hidden;*/
 	background-color: #333333;
-	width:300px;
-
+	width:150px;
+	position: absolute;
 /*	text-align: left;*/
 }
 #menu9 ul li {
 	float:none;
 	border-right: 1px solid #bbb;
+	position: relative;
 }
 #menu9 ul li a {
 	color:white;
@@ -440,19 +440,21 @@
 }
 #menu9 ul li ul {
 	display: none;
-	position:relative;
+/*	display: block;*/
+	position:absolute;
 	background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+	top:0;
+	left:150px;
+
 }
-#menu9 ul li:hover ul {
+#menu9 ul li:hover > ul {
 	display: block;
 }
 #menu9 ul li ul li {
 	float:none;
 	position: relative;
-	right:-300px;
-	top:0;
 }
 #menu9 ul li ul li a {
 	color: black;
@@ -463,8 +465,64 @@
 	color:white;
 }
 
-/* ----------------------  */
 /* ----------------------------  */ 
+#menu14 {
+	width:80%;
+	margin:0 auto;
+	border: 1px solid black;
+	padding:10px;
+}
+#menu14 ul {
+	list-style: none;
+	padding: 0;
+	margin:0;
+	background-color:#333333; 
+}
+#menu14 ul li {
+	display: block;
+	border: solid 1px #fff;
+	width: 150px;
+	position:relative;
+/*	text-align: center;*/
+}
+#menu14 ul li a {
+	color:white;
+	display: block;
+	text-align: left;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+#menu14 ul li a:hover {
+	background-color: red;
+}
+#menu14 ul li ul {
+	display: none;
+	/*display: block;*/
+	position:absolute;
+	background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	left:150px;
+	top:0;
+}
+#menu14 ul li:hover > ul {
+	display: block;
+}
+#menu14 ul li ul li {
+/*	display: block; 
+	position:relative;*/
+}
+#menu14 ul li ul li a {
+	color: black;
+    text-align: left;
+}
+#menu14 ul li ul li a:hover {
+	background-color: DodgerBlue;
+	color:white;
+}
+
+
+/* ---------------------------- */
 #menu10 {
 	width:80%;
 	margin:0 auto;
@@ -475,19 +533,18 @@
 	list-style-type: none;
 	margin: 0 auto;
 	padding: 0;
-	overflow: hidden;
 	background-color: #333333;
-	width:300px;
-/*	text-align: left;*/
 }
 #menu10 ul li {
-	float:none;
-	border-right: 1px solid #bbb;
+	display: block;
+	border: solid 1px #fff;
+	width: 150px;
+	position:relative;
 }
 #menu10 ul li a {
 	color:white;
 	display: block;
-	text-align: left;
+	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 }
@@ -496,26 +553,104 @@
 }
 #menu10 ul li ul {
 	display: none;
-	position:relative;
+	/*display: block;*/ /* para ver como queda */
 	background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+	position:absolute;
+	top:0;
+	left: 150px;
 }
-#menu10 ul li:hover ul {
-/*	display: block;*/
+#menu10 ul li:hover > ul {
+	display: block;
 }
 #menu10 ul li ul li {
-/*	float:none;
-	position: relative;
-	right:-300px;
-	top:0;*/
+	display: block; 
+	position:relative;
+/*	position:relative; */  /* no funciona top ni right */ 
+/*	top: 0;
+	right:-150px;*/
 }
 #menu10 ul li ul li a {
-/*	color: black;
-    text-align: left;*/
+	color: black;
+    text-align: left;
 }
 #menu10 ul li ul li a:hover {
-/*	background-color: DodgerBlue;
-	color:white;*/
+	background-color: DodgerBlue;
+	color:white;
 }
-/* Barra de navegación vertical con block */
+
+
+/* ------------------------------------ */
+#menu11 {
+	width:80%;
+	margin:0 auto;
+	border: 1px solid black;
+	padding:10px;
+
+}
+#menu11 ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	z-index: 1;
+}
+#menu11 ul li {
+	display: block;
+	float:left;
+	width:150px;
+	text-align: left;
+	background-color: #333333;
+}
+#menu11 ul li a {
+	color:white;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+#menu11 ul li a:hover {
+	background-color: red;
+}
+#menu11 ul li ul{
+display:none;
+}
+#menu11 ul li:hover > ul{
+display:block;
+}
+
+#menu11 ul li ul li  {
+position: relative;
+}
+#menu11 ul li ul li a {
+	color:white;
+	display: inline-block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+#menu11 ul li ul li a:hover {
+	background-color: red;
+}
+#menu11 ul li ul li ul {
+position: absolute;
+top:0;
+left:150px;
+}
+#menu11 ul li ul li ul li  {
+/*display: block;
+margin-left: 150px;*/
+
+	
+	/*	top:0;
+	right:-150px;*/
+}
+
+#menu11 ul li ul li a {
+	color: black;
+    text-align: left;
+}
+#menu11 ul li ul li a:hover {
+	background-color: green;
+	color:white;
+}

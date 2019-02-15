@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Pseudo clases</title>
+<style>
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+		font-size: 1.5em;
+		width: 90%;
+		margin: 10px auto;
+		border: 1px solid black;
+		background-color: antiquewhite;
+	}
+	#div1 p {
+		background-color: yellow;
+	}
+	#div2>p {
+		background-color: yellow;
+	}
+	#div3 + p {
+		background-color: yellow;
+	}
+	#div4 ~ .p1 {
+		background-color: yellow;
+	}
+	h2 + code>p {
+		color: red;
+		background-color: black;
+	}
+	#p1::first-line {
+		color: #ff0000;
+		font-variant: small-caps;
+	}
+	#p2::first-letter {
+		color: #ff0000;
+		font-size: xx-large;
+	}
+	p.intro::first-letter {
+		color: #ff0000;
+		font-size:300%;
+	}
+	#p3::first-letter {
+		color: #ff0000;
+		font-size: xx-large;
+	}
+	#p3::first-line {
+		color: #0000ff;
+		font-variant: small-caps;
+	}
+	#div5 p {
+		background-color: yellow;
+	}
+	#div6>p {
+		background-color: yellow;
+	}
+	#div7 + p {
+		background-color: yellow;
+	}
+	#div8 ~ .p1 {
+		background-color: yellow;
+	}
+	.flex-container {
+		/* Compatibilidad con el navegador Safari de Apple */ 
+		display: -webkit-flex; /* Safari */
+		display: -mz-flex; /* Firefox */
+		display: -ms-flex; /* Explorer */
+		display: -o-flex; /* Opera */
+		
+		/* propiedad que define la flexión */
+		display: flex; /* inline, block, flex, grid */
+		
+		/* define en qué dirección */
+		flex-direction: row; /* column, column-reverse, row, row-reverse */
+		
+		/* especifica que los elementos flexibles se envuelva */
+		flex-wrap: wrap; /* wrap, nowrap, wrap-reverse */
+		
+		/* propiedad abreviada para establecer las propiedades flex-direction y flex-wrap */ 
+		/*flex-flow: row wrap;*/ /* row wrap, column wrap*/
+		
+		/* propiedad para alinear los elementos de la flexión horizontal */
+		justify-content: space-between; /* space-between, center, space-around, flex-end, flex-star */
+		
+		/* propiedad para alinear los elementos de flexión vertical */
+		align-items: stretch; /* flex-start (parte superior), flex-end (parte inferior), stretch (por defecto), baseline* (alinea con la línea de base de escritura) */
+		
+		/* propiedad para alinear las líneas de flexión */
+		align-content: space-between; 
+		background-color: DodgerBlue;
+		
+		-webkit-flex-grow: 0; /* Safari */
+		-webkit-flex-shrink: 0; /* Safari */
+		-webkit-flex-basis: 50px; /* Safari */
+	}
+
+	.flex-container > div {
+		background-color: #f1f1f1;
+		width: 25%;
+		/*margin: 10px;*/
+		padding: 10px;
+		font-size: 0.7em;
+	}
+	/* @media not|only mediatype-->all|print|screen|speech and (expression) {CSS-Code} */
+	/* @media screen and (expresion) {CSS-Code} = @media (expresion) {CSS-Code} */
+	@media screen and (max-width : 1024px ){
+		body {
+			background-color: lightgreen;
+		}
+		.flex-container > div {
+			width: 50%;
+		}
+		.flex-container > .divpseudo-elemento {
+			background-color: aquamarine;
+		}
+	}
+	@media screen and (max-width: 800px) {
+		body {
+			background-color: lightgrey;
+		}
+		.flex-container {
+			flex-direction: column;
+		}
+		.flex-container > div {
+			width: 100%;
+		}
+		.flex-container > .divpseudo-elemento {
+			background-color: burlywood;
+		}
+	}
+	@media screen and (max-width: 500px) {
+		body {
+			background-color: lightblue;
+		}
+		.flex-container > .divpseudo-elemento {
+			background-color: indianred;
+		}
+	}
+	#p4::first-line {
+		color: #ff0000;
+		font-variant: small-caps;
+	}
+	#p5::first-letter {
+		color: #ff0000;
+		font-size: xx-large;
+	}
+	#p6::first-letter {
+		color: #ff0000;
+		font-size: xx-large;
+	}
+	#p6::first-line {
+		color: #0000ff;
+		font-variant: small-caps;
+	}
+</style>
+</head>
+<body>
+<h1>CSS Combinadores, pseudo-elementos, pseudo-clases</h1>
+<hr>
+
+<h2>CSS Combinadores</h2>
+<hr>
+<div class="flex-container">
+	<div>
+		<h2>Selector Descendiente</h2>
+		<code><p>div p { background-color: yellow; }</p></code>
+		<div id="div5">
+			<p>Paragraph 1 in the div.</p>
+			<p>Paragraph 2 in the div.</p>
+			<span><p>Paragraph 3 in the div.</p></span>
+		</div>
+		<p>Paragraph 4. Not in a div.</p>
+		<p>Paragraph 5. Not in a div.</p>
+	</div>
+	<div>
+		<h2>Selector hijo</h2>
+		<code><p>div &gt; p { background-color: yellow; }</p></code>
+		<div id="div6">
+			<p>Paragraph 1 in the div.</p>
+			<p>Paragraph 2 in the div.</p>
+			<span><p>Paragraph 3 in the div.</p></span> <!-- not Child but Descendant -->
+		</div>
+		<p>Paragraph 4. Not in a div.</p>
+		<p>Paragraph 5. Not in a div.</p>
+	</div>
+	<div>
+		<h2>Selector adyacente</h2>
+		<code><p>div + p { background-color: yellow; }</p></code>
+		<div id="div7">
+			<p>Paragraph 1 in the div.</p>
+			<p>Paragraph 2 in the div.</p>
+		</div>
+		<p>Paragraph 3. Not in a div.</p>
+		<p>Paragraph 4. Not in a div.</p>
+	</div>
+	<div>
+		<h2>Selector general</h2>
+		<code><p>div ~ p { background-color: yellow; }</p></code>
+		<p>Paragraph 1.</p>
+		<div id="div8">
+			<code>Some code.</code>
+			<p>Paragraph 2.</p>
+		</div>
+		<p class="p1">Paragraph 3.</p>
+		<code>Some code.</code>
+		<p class="p1">Paragraph 4.</p>
+	</div>
+</div>
+<hr>
+
+<h2>CSS Pseudo-elementos</h2>
+<div class="flex-container">
+	<div class="divpseudo-elemento">
+		<h2>Pseudo-elemento de primera línea</h2>
+		<code><p>p::first-line { color: #ff0000; font-variant: small-caps; }</p></code>
+		<p id="p4">You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+	</div>
+	<div class="divpseudo-elemento">
+		<h2>Pseudo-elemento de primera letra</h2>
+		<code><p>p::first-letter { color: #ff0000; font-size: xx-large; }</p></code>
+		<p id="p5">You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
+	</div>
+	<div class="divpseudo-elemento">
+		<h2>Pseudo-elementos con clases CSS</h2>
+		<code><p>p.intro::first-letter { color: #ff0000; font-size:200%; }</p></code>
+		<p class="intro">This is an introduction.</p>
+		<p>This is a paragraph with some text. A bit more text even.</p>
+	</div>
+	<div class="divpseudo-elemento">
+		<h2>Pseudo-elementos múltiples</h2>
+		<code>
+			<p>p::first-letter { color: #ff0000; font-size: xx-large; }</p>
+			<p>p::first-line { color: #0000ff; font-variant: small-caps;}</p>
+		</code>
+		<p id="p6">You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect to the first letter and the first line of a text!</p>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>Selector Descendiente</h2>
+<code><p>div p { background-color: yellow; }</p></code>
+<div id="div1">
+	<p>Paragraph 1 in the div.</p>
+	<p>Paragraph 2 in the div.</p>
+	<span><p>Paragraph 3 in the div.</p></span>
+</div>
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+<h2>Selector hijo</h2>
+<code><p>div &gt; p { background-color: yellow; }</p></code>
+<div id="div2">
+	<p>Paragraph 1 in the div.</p>
+	<p>Paragraph 2 in the div.</p>
+	<span><p>Paragraph 3 in the div.</p></span> <!-- not Child but Descendant -->
+</div>
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+<h2>Selector de hermanos adyacentes</h2>
+<code><p>div + p { background-color: yellow; }</p></code>
+<div id="div3">
+	<p>Paragraph 1 in the div.</p>
+	<p>Paragraph 2 in the div.</p>
+</div>
+<p>Paragraph 3. Not in a div.</p>
+<p>Paragraph 4. Not in a div.</p>
+
+<h2>Selector general de hermanos</h2>
+<code><p>div ~ p { background-color: yellow; }</p></code>
+<p>Paragraph 1.</p>
+<div id="div4">
+	<code>Some code.</code>
+	<p>Paragraph 2.</p>
+</div>
+<p class="p1">Paragraph 3.</p>
+<code>Some code.</code>
+<p class="p1">Paragraph 4.</p>
+<hr>
+
+<h1>CSS Pseudo-elementos</h1>
+<hr>
+
+<h2>Pseudo-elemento de primera línea</h2>
+<code><p>p::first-line { color: #ff0000; font-variant: small-caps; }</p></code>
+<p id="p1">You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+
+<h2>Pseudo-elemento de primera letra</h2>
+<code><p>p::first-letter { color: #ff0000; font-size: xx-large; }</p></code>
+<p id="p2">You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
+
+<h2>Pseudo-elementos con clases CSS</h2>
+<code><p>p.intro::first-letter { color: #ff0000; font-size:200%; }</p></code>
+<p class="intro">This is an introduction.</p>
+<p>This is a paragraph with some text. A bit more text even.</p>
+
+<h2>Pseudo-elementos múltiples</h2>
+<code>
+	<p>p::first-letter { color: #ff0000; font-size: xx-large; }</p>
+	<p>p::first-line { color: #0000ff; font-variant: small-caps;}</p>
+</code>
+<p id="p3">You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect to the first letter and the first line of a text!</p>
+
+
+
+
+</body>
+</html>
