@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Formulario de acceso con estilos CSS</title>
+<style>
+	div {
+		width: 30%;
+		margin: 50px auto;
+		border: 1px solid black;
+		padding: 20px;
+	}
+
+	div div {
+		border: none;
+		width: 100%;
+	}
+	div div input[type=submit] {
+		width: 100px;
+	}
+	img {
+		width: 35%;
+		margin: auto;
+		display: block;
+		border: none;
+		border-radius: 30em;
+	}
+
+	input[type=text], input[type=email], input[type=password] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+	}
+
+	input[type=submit] {
+		width: 100%;
+		background-color: #4CAF50;
+		color: white;
+		padding: 14px 20px;
+		margin: 10px 0;
+		border: none;
+		cursor: pointer;
+	}
+
+	input[type=submit]:hover {
+		background-color: #45a049;
+	}
+</style>
+</head>
+<body>
+<div>
+	<img src="../02 Formulario de registro/img_avatar.png" alt="avatar 1">
+	<form action="/action_page.php">
+		<label for="usuario">Usuario</label><br>
+		<input type="text" name="usuario" placeholder="Entrar usuario"><br>
+		<label for="contrasena">Contraseña</label><br>
+		<input type="password" name="contrasena" placeholder="Entrar contraseña"><br>
+		<input type="submit" name="Iniciar sesión" value="Iniciar sesión"><br>
+		<input type="checkbox" checked><label for="recordarme">Recordarme</label>
+	</form>
+</div>
+
+<div>
+	<img src="../02 Formulario de registro/img_avatar2.png" alt="avatar 2">
+	<form action="/action_page.php">
+		<label for="usuario">Usuario</label><br>
+		<input type="text" name="usuario" placeholder="Entrar usuario"><br>
+		<label for="contrasena">Contraseña</label><br>
+		<input type="password" name="contrasena" placeholder="Entrar contraseña"><br>
+		<input type="submit" name="Iniciar sesión" value="Iniciar sesión"><br>
+		<input type="checkbox" checked><label for="recordarme">Recordarme</label>
+		<div>
+			<input type="submit" name="registrarse" value="Registrarse"><label for="contrasena">¿Has olvidado la <a href="#">contraseña</a>?</label>
+		</div>
+	</form>
+</div>
+</body>
+</html>
