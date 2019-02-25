@@ -4,26 +4,26 @@
 <meta charset="utf-8">
 <title>Formulario de acceso con estilos CSS</title>
 <style>
+	* {
+		font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+		font-size: 0.98em;
+	}
 	div {
 		width: 30%;
 		margin: 50px auto;
-		border: 1px solid black;
-		padding: 20px;
+		border: 1px solid grey;
 	}
 
-	div div {
-		border: none;
-		width: 100%;
-	}
-	div div input[type=submit] {
-		width: 100px;
-	}
 	img {
 		width: 35%;
-		margin: auto;
+		margin: 15px auto;
 		display: block;
 		border: none;
 		border-radius: 30em;
+	}
+
+	form {
+		margin: 15px 
 	}
 
 	input[type=text], input[type=email], input[type=password] {
@@ -48,6 +48,25 @@
 	input[type=submit]:hover {
 		background-color: #45a049;
 	}
+
+	div div {
+		border: none;
+		width: 100%;
+		margin: 0;
+	}
+
+	div div input[type=submit] {
+		width: 100px;
+		padding: 10px;
+		margin: 10px 0;
+		background-color: rgba(216,67,67,1.00);
+	}
+
+	span {
+		float: right;
+		margin-top: 20px;
+	}
+
 </style>
 </head>
 <body>
@@ -60,6 +79,9 @@
 		<input type="password" name="contrasena" placeholder="Entrar contraseña"><br>
 		<input type="submit" name="Iniciar sesión" value="Iniciar sesión"><br>
 		<input type="checkbox" checked><label for="recordarme">Recordarme</label>
+		<div>
+			<input type="submit" name="registrarse" value="Registrarse"><span>¿Has olvidado la <a href="#">contraseña</a>?</span>
+		</div>
 	</form>
 </div>
 
@@ -73,7 +95,7 @@
 		<input type="submit" name="Iniciar sesión" value="Iniciar sesión"><br>
 		<input type="checkbox" checked><label for="recordarme">Recordarme</label>
 		<div>
-			<input type="submit" name="registrarse" value="Registrarse"><label for="contrasena">¿Has olvidado la <a href="#">contraseña</a>?</label>
+			<input type="submit" name="registrarse" value="Registrarse"><span>¿Has olvidado la <a href="#">contraseña</a>?</span>
 		</div>
 	</form>
 </div>
