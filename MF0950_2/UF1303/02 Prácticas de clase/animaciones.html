@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+</head>
+<body>
+
+<h1>Las animaciones CSS</h1>
+<p>Una animación permite a un elemento de cambiar gradualmente de un estilo a otro. Se puede cambiar tantas propiedades CSS que desee, como muchas veces que desee. Para utilizar la animación CSS, primero debe especificar algunos fotogramas clave para la animación. </p>
+<p>Fotogramas clave conservar lo estilos el elemento tendrá en determinados momentos.</p>
+<h2>La propiedad animation:</h2>
+<ul>
+  <li><a href="https://www.w3schools.com/cssref/css3_pr_animation-name.asp">animation-name</a></li>
+  <li><a href="https://www.w3schools.com/cssref/css3_pr_animation-duration.asp">animation-duration</a></li>
+  <li><a href="https://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp">animation-timing-function</a></li>
+  <li><a href="https://www.w3schools.com/cssref/css3_pr_animation-delay.asp">animation-delay</a></li>
+  <li><a href="https://www.w3schools.com/cssref/css3_pr_animation-iteration-count.asp">animation-iteration-count</a></li>
+  <li><a href="https://www.w3schools.com/cssref/css3_pr_animation-direction.asp">animation-direction</a></li>
+  <li><a href="https://www.w3schools.com/cssref/css3_pr_animation-fill-mode.asp">animation-fill-mode</a></li>
+  <li><a href="https://www.w3schools.com/cssref/css3_pr_animation-play-state.asp">animation-play-state</a></li>
+</ul>
+<hr>
+<style> 
+#div1 {
+width: 100px;
+height: 100px;
+background-color: red;
+-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+animation-name: example;
+animation-duration: 4s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+from {background-color: red;}
+to {background-color: yellow;}
+}
+/* Standard syntax */
+@keyframes example {
+from {background-color: red;}
+to {background-color: yellow;}
+}
+</style>
+<div id="div1"></div>
+
+</body>
+</html>
